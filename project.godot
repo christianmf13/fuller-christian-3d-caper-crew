@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="FullerChristian_3DGameName"
+config/name="FullerChristian_CaperCrew"
 run/main_scene="uid://dyyvytroeqlci"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"

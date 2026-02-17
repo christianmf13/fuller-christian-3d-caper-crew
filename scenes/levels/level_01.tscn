@@ -47,16 +47,6 @@ size = Vector3(1, 14.98, 41.2)
 transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, -21.536303, 7.506202, 14.370681)
 size = Vector3(1, 14.98, 70.07269)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="Castle/Wall3" unique_id=603489056]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29999542, -4.6, 24.893906)
-operation = 2
-size = Vector3(1.6, 1.8000001, 7.5)
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="Castle/Wall3" unique_id=1883789497]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19999886, -4.6, 3.5939045)
-operation = 2
-size = Vector3(1.6, 1.8000001, 7.5)
-
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="Castle/Wall3" unique_id=522167267]
 transform = Transform3D(4.3711392e-08, -1, 1.07284414e-07, -1, -4.371139e-08, 4.371139e-08, -4.371138e-08, -1.07284414e-07, -1, 0.19539452, -4.916203, 14.143905)
 operation = 2
@@ -138,9 +128,441 @@ size = Vector3(2.6000001, 2.5, 2.2)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -100.932, 7.5, -0.01)
 size = Vector3(1, 15, 100)
 
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=2080386511]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19542694, 5.9976826, 45.018433)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Castle/Wall7" unique_id=332709335]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079254, 5.4556293, 45.018433)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=1306719278]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19542694, 5.9976826, 40.556366)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Castle/Wall7" unique_id=123642120]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.60793304, 5.4556293, 40.556366)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=807431002]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19543457, 5.9976826, 36.0925)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Castle/Wall7" unique_id=282507256]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.60793304, 5.4556293, 36.0925)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=825031515]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.1954422, 5.9976826, 31.63045)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Castle/Wall7" unique_id=533797916]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.60793304, 5.4556293, 31.63045)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=523524123]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.1954422, 5.9976826, 27.136011)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Castle/Wall7" unique_id=2135832141]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.60793304, 5.4556293, 27.136011)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=1422515288]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.1954422, 5.9976826, 22.673946)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Castle/Wall7" unique_id=24313524]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079407, 5.4556293, 22.673946)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=765220115]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.1954422, 5.9976826, 18.210081)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="Castle/Wall7" unique_id=1914589856]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079483, 5.4556293, 18.210081)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=1951909151]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19544983, 5.9976826, 13.74803)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Castle/Wall7" unique_id=400079716]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079483, 5.4556293, 13.74803)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D10" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=1259012178]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.1954422, 5.9976826, 8.1943035)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="Castle/Wall7" unique_id=1121247737]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079483, 5.4556293, 8.1943035)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D11" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=1290740616]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19544983, 5.9976826, 3.730436)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="Castle/Wall7" unique_id=1857112969]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079483, 5.4556293, 3.730436)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D12" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=438543416]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19545746, 5.9976826, -0.7316153)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="Castle/Wall7" unique_id=817240919]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079483, 5.4556293, -0.7316153)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D13" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=783735306]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19544983, 5.9976826, -6.394719)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="Castle/Wall7" unique_id=903723724]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079483, 5.4556293, -6.394719)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D14" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=1361373299]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.1954422, 5.9976826, -11.948445)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="Castle/Wall7" unique_id=977665779]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079483, 5.4556293, -11.948445)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D15" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=1995295105]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19544983, 5.9976826, -16.412313)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="Castle/Wall7" unique_id=805014470]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079483, 5.4556293, -16.412313)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D16" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=834309768]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19545746, 3.2906494, -45.41013)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="Castle/Wall7" unique_id=245915926]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079483, 1.3360233, -45.41013)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D17" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=967552896]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19545746, 3.2906494, -40.408382)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D20" type="CSGBox3D" parent="Castle/Wall7" unique_id=1242472373]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079483, 1.3360233, -40.408382)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D18" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=9552379]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19544983, 3.2906494, -34.12838)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D21" type="CSGBox3D" parent="Castle/Wall7" unique_id=1719059662]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079483, 1.3360233, -34.12838)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D19" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=568027115]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19544983, 3.2906494, -29.12838)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D22" type="CSGBox3D" parent="Castle/Wall7" unique_id=1997478774]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079483, 1.3360233, -29.12838)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D20" type="CSGCylinder3D" parent="Castle/Wall7" unique_id=1255557256]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19544983, 3.2906494, -23.873243)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D23" type="CSGBox3D" parent="Castle/Wall7" unique_id=66781326]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079483, 1.3360233, -23.873243)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
 [node name="Wall8" type="CSGBox3D" parent="Castle" unique_id=109200626]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -41.355, 7.5, -49.48)
 size = Vector3(1, 15, 120.15)
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=1810818950]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19545364, 0.014199257, -9.6417465)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Castle/Wall8" unique_id=1733724528]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079521, -1.9404268, -9.6417465)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=1687058260]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19545364, 0.014199257, -4.6399994)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Castle/Wall8" unique_id=2051674214]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079521, -1.9404268, -4.6399994)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=402079348]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19544983, 0.014199257, 1.6399994)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Castle/Wall8" unique_id=720650332]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079483, -1.9404268, 1.6399994)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=818537602]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19544983, 0.014199257, 6.6399994)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Castle/Wall8" unique_id=1057220786]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079483, -1.9404268, 6.6399994)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=359135468]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19544983, 0.014199257, 11.895136)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Castle/Wall8" unique_id=1741788276]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079483, -1.9404268, 11.895136)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=619386895]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19544983, 0.014199257, 16.896883)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Castle/Wall8" unique_id=332591506]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079483, -1.9404268, 16.896883)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=1208829184]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19544983, 0.014199257, 23.176882)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="Castle/Wall8" unique_id=499294043]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079483, -1.9404268, 23.176882)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=1152622352]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19544983, 0.014199257, 28.176882)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Castle/Wall8" unique_id=1859147844]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079483, -1.9404268, 28.176882)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D10" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=2065373976]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19544983, 0.014199257, 34.019623)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="Castle/Wall8" unique_id=224994791]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079483, -1.9404268, 34.019623)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D11" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=654618644]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19544983, 0.014199257, 39.02137)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="Castle/Wall8" unique_id=1786368588]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079483, -1.9404268, 39.02137)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D12" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=339802226]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19545364, 0.014199257, 45.30137)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="Castle/Wall8" unique_id=145206765]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079521, -1.9404268, 45.30137)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D13" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=2070683077]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19545364, 0.014199257, 50.30137)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="Castle/Wall8" unique_id=1108554727]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.6079521, -1.9404268, 50.30137)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D14" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=1628665956]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19546509, 3.3261538, -54.158455)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="Castle/Wall8" unique_id=1321703198]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.60796356, 1.3715277, -54.158455)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D15" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=306139680]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19546509, 3.3261538, -49.156715)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="Castle/Wall8" unique_id=1693997400]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.60796356, 1.3715277, -49.156715)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D16" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=2024733047]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19545746, 3.3261538, -42.876717)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="Castle/Wall8" unique_id=700940579]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.60795593, 1.3715277, -42.876717)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D17" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=780269286]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19545746, 3.3261538, -37.876717)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D20" type="CSGBox3D" parent="Castle/Wall8" unique_id=1535606729]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.60795593, 1.3715277, -37.876717)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D18" type="CSGCylinder3D" parent="Castle/Wall8" unique_id=1794971609]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.19545746, 3.3261538, -32.621582)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D21" type="CSGBox3D" parent="Castle/Wall8" unique_id=1875018049]
+transform = Transform3D(6.572278e-08, -0.99999994, 3.596894e-08, -1.5035619, -4.3711385e-08, 1.465499e-08, -6.5722766e-08, -1.0728441e-07, -0.33526716, 0.60795593, 1.3715277, -32.621582)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
 
 [node name="Wall9" type="CSGBox3D" parent="Castle" unique_id=1001949393]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -41.1, 7.5, 49.47)
@@ -158,15 +580,178 @@ radius = 6.1
 height = 13.743751
 sides = 18
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="Castle/Wall9" unique_id=727215790]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7999306, 0.0932703, -34.999973)
-operation = 2
-size = Vector3(2.6000001, 7, 26.800001)
-
 [node name="CSGBox3D3" type="CSGBox3D" parent="Castle/Wall9" unique_id=1670663712]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7999344, -0.7380562, 38.71901)
 operation = 2
 size = Vector3(2.6000001, 7, 26.800001)
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=1754035258]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19542694, 5.9976826, -9.6417465)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Castle/Wall9" unique_id=675057591]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079254, 5.4556293, -9.6417465)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=1586875321]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19543076, 5.9976826, -14.103813)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Castle/Wall9" unique_id=1154672644]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079292, 5.4556293, -14.103813)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=388100457]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19543457, 5.9976826, -18.567677)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Castle/Wall9" unique_id=180179990]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.60793304, 5.4556293, -18.567677)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=1719417554]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19543839, 5.9976826, -23.029728)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Castle/Wall9" unique_id=1501247035]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.60793686, 5.4556293, -23.029728)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=628283025]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19543839, 5.9976826, -27.524166)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Castle/Wall9" unique_id=459873642]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.60793686, 5.4556293, -27.524166)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D7" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=1671509715]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.1954422, 5.9976826, -31.986233)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Castle/Wall9" unique_id=296094387]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079407, 5.4556293, -31.986233)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D8" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=490780248]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19544601, 5.9976826, -36.4501)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="Castle/Wall9" unique_id=1893239090]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079445, 5.4556293, -36.4501)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D9" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=712816707]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19544983, 5.9976826, -40.91215)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Castle/Wall9" unique_id=1186515152]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079483, 5.4556293, -40.91215)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D10" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=1102583842]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19544601, 5.9976826, -46.465878)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="Castle/Wall9" unique_id=1036266847]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079445, 5.4556293, -46.465878)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D11" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=1780674643]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19544983, 5.9976826, -50.929745)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="Castle/Wall9" unique_id=1176830482]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079483, 5.4556293, -50.929745)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D12" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=1608970728]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19545364, 5.9976826, -55.391796)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="Castle/Wall9" unique_id=654232898]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079521, 5.4556293, -55.391796)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D13" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=977075000]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19542694, 5.9976826, 18.648273)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="Castle/Wall9" unique_id=885703567]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079254, 5.4556293, 18.648273)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D14" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=2298309]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19543076, 5.9976826, 14.186207)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="Castle/Wall9" unique_id=1813572020]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.6079292, 5.4556293, 14.186207)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
+
+[node name="CSGCylinder3D15" type="CSGCylinder3D" parent="Castle/Wall9" unique_id=1394668389]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.19543839, 5.9976826, 9.722343)
+operation = 2
+radius = 1.1
+height = 1.9750001
+sides = 16
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="Castle/Wall9" unique_id=1448522239]
+transform = Transform3D(1.8226126e-08, -0.99999994, 3.7733017e-08, -0.41696516, -4.3711385e-08, 1.5373738e-08, -1.8226123e-08, -1.0728441e-07, -0.35171014, 0.60793686, 5.4556293, 9.722343)
+operation = 2
+size = Vector3(2.6000001, 2.5, 2.2)
 
 [node name="Stairs1" type="CSGPolygon3D" parent="Castle" unique_id=1371354673]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.0999999, 0, -17.06)
@@ -195,11 +780,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5650015, 4.7800007, 0.004
 size = Vector3(20.949999, 0.5, 41.25)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Castle" unique_id=494855472]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.077488, 4.7799997, -34.72)
-size = Vector3(119.95499, 0.5, 28.300001)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -83.02447, 4.7799997, -34.72)
+size = Vector3(36.061024, 0.5, 28.300001)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Castle/CSGBox3D2" unique_id=492416028]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.473095, -0.1565814, -13.738815)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.494598, -0.1565814, -13.738815)
 operation = 2
 size = Vector3(8.02478, 1, 1)
 
@@ -731,10 +1316,6 @@ operation = 2
 radius = 5.2000003
 height = 4.245508
 
-[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Castle" unique_id=1034902558]
-transform = Transform3D(0, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, 0, -99.44832, 5.046282, -20.626581)
-polygon = PackedVector2Array(0, 0, -0.023376465, 10.443757, 21.796547, -0.02514553)
-
 [node name="CSGPolygon3D2" type="CSGPolygon3D" parent="Castle" unique_id=134084040]
 transform = Transform3D(1.0000001, 0, -4.3711392e-08, 0, 1, 0, 4.3711392e-08, 0, 1.0000001, -97.37572, -5.392652, -47.95276)
 polygon = PackedVector2Array(-0.01876831, 5.3751097, -0.1851883, 10.422871, 10.245018, 5.4126287)
@@ -744,9 +1325,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.09191, 15.2445, -0.003776
 size = Vector3(120.66966, 0.5, 99.94182)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Castle/CSGBox3D3" unique_id=1783406914]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.851723, 0.17669964, -23.527489)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.31423, 0.17669964, -11.497852)
 operation = 2
-size = Vector3(1, 1, 5.8505707)
+size = Vector3(2.551756, 1, 6.4830246)
+
+[node name="CSGBox3D101" type="CSGBox3D" parent="Castle/CSGBox3D3" unique_id=444324940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.588127, 0, 17.746433)
+operation = 2
+size = Vector3(24.509521, 0.5, 46.25148)
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="Castle" unique_id=1792710839]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.729498, 15.865341, -0.026237488)
@@ -1132,5 +1718,398 @@ size = Vector3(1, 0.60253906, 1)
 transform = Transform3D(2.9802322e-08, 0, -1, 0, 1, 0, 1, 0, 2.9802322e-08, -89.21698, 16.538, -49.46675)
 size = Vector3(1, 0.60253906, 1)
 
+[node name="CSGBox3D96" type="CSGBox3D" parent="Castle" unique_id=1093846845]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.131756, 4.7799997, -22.065477)
+size = Vector3(84.23883, 0.5, 2.9909549)
+
+[node name="Stairs3" type="CSGPolygon3D" parent="Castle" unique_id=1976338955]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 18.220768, 4.929244, -5.663252)
+polygon = PackedVector2Array(-0.3, -0.1, -0.31, 2.9399998, 11.45941, 0.09274769)
+depth = 2.55
+
+[node name="Stairs4" type="CSGPolygon3D" parent="Castle" unique_id=1119474232]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 4.275982, 7.7642903, -0.46744633)
+polygon = PackedVector2Array(-0.3, -0.1, -0.31, 2.9399998, 11.400001, 0.1)
+depth = 2.55
+
+[node name="StairWell3" type="CSGBox3D" parent="Castle" unique_id=1490778418]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 17.137857, 3.9160614, -2.7933226)
+size = Vector3(5.12832, 7.9021215, 2.9329638)
+
+[node name="Stairs5" type="CSGPolygon3D" parent="Castle" unique_id=1879141105]
+transform = Transform3D(-2.1855695e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855695e-07, -1.0563126, 10.5796175, -14.381309)
+polygon = PackedVector2Array(-0.3, -0.1, -0.36227894, 4.9146404, 11.400001, 0.1)
+depth = 2.55
+
+[node name="StairWell4" type="CSGBox3D" parent="Castle" unique_id=1935510725]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4388278, 9.174037, -1.7370718)
+size = Vector3(5.047168, 3.0276756, 2.54)
+
+[node name="StairWell5" type="CSGBox3D" parent="Castle" unique_id=1712539742]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.21415828, 11.313051, -17.182432)
+size = Vector3(4.919751, 7.3052588, 2.5511377)
+
+[node name="StairWall2" type="CSGBox3D" parent="Castle" unique_id=275097895]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.229828, 9.16704, -8.882318)
+size = Vector3(11.9, 3.0124047, 2.4524584)
+
+[node name="CSGBox3D97" type="CSGBox3D" parent="Castle" unique_id=1032782882]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -99.46951, 11.763437, 14.574261)
+size = Vector3(69.08168, 0.25, 1.984)
+
+[node name="CSGBox3D98" type="CSGBox3D" parent="Castle" unique_id=455159088]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -23.037304, 11.763437, 14.750156)
+size = Vector3(69.5569, 0.25, 1.984)
+
+[node name="CSGBox3D99" type="CSGBox3D" parent="Castle" unique_id=550344759]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.229, 11.763437, 47.971638)
+size = Vector3(78.545, 0.25, 1.984)
+
+[node name="CSGBox3D100" type="CSGBox3D" parent="Castle/CSGBox3D99" unique_id=1693768603]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.60749, 0, 0)
+operation = 2
+size = Vector3(16.74134, 0.25, 1.984)
+
+[node name="CSGBox3D100" type="CSGBox3D" parent="Castle" unique_id=341410643]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.229, 11.763437, -18.653568)
+size = Vector3(78.545, 0.25, 1.984)
+
+[node name="StairWell6" type="CSGBox3D" parent="Castle" unique_id=185242997]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 17.137857, 2.4961748, -10.918402)
+size = Vector3(12.962512, 5.0623484, 2.9329638)
+
+[node name="Lights" type="Node3D" parent="." unique_id=1074144364]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lights" unique_id=717327595]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 14.868905, -34.450348)
+light_color = Color(1, 0.71123004, 0.5032385, 1)
+light_energy = 2.425
+light_specular = 2.851
+spot_range = 21.357073
+spot_angle = 42.63731
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Lights" unique_id=1648314156]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -23.81445, 14.868905, -34.450348)
+light_color = Color(1, 0.71123004, 0.5032385, 1)
+light_energy = 2.425
+light_specular = 2.851
+spot_range = 21.357073
+spot_angle = 42.63731
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Lights" unique_id=1002565436]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -49.762814, 14.868905, -34.450348)
+light_color = Color(1, 0.71123004, 0.5032385, 1)
+light_energy = 2.425
+light_specular = 2.851
+spot_range = 21.357073
+spot_angle = 42.63731
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lights" unique_id=330650857]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.850266, 9.383484, -26.279919)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Lights" unique_id=11789059]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.75805, 9.383484, -37.66359)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Lights" unique_id=1913674620]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.63592, 9.383484, -48.179943)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Lights" unique_id=1714846064]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.225845, 9.383484, -48.38862)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Lights" unique_id=1231280362]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.79656, 9.383484, -48.59166)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="Lights" unique_id=1153888208]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.739405, 9.383484, -12.922849)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="Lights" unique_id=185764277]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.739405, 9.383484, 12.18834)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D9" type="OmniLight3D" parent="Lights" unique_id=828884289]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6012516, 9.383484, -12.922849)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D10" type="OmniLight3D" parent="Lights" unique_id=846625988]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5573406, 9.383484, 12.18834)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D11" type="OmniLight3D" parent="Lights" unique_id=1164469539]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.975609, 8.938217, -16.781887)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D12" type="OmniLight3D" parent="Lights" unique_id=279975164]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20169961, 3.534463, -2.024853)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D13" type="OmniLight3D" parent="Lights" unique_id=52253306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.64272, 12.280885, -0.61513793)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D14" type="OmniLight3D" parent="Lights" unique_id=1075631783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.728048, 2.1260884, -18.815742)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D15" type="OmniLight3D" parent="Lights" unique_id=1452228395]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3425515, 2.1260884, -18.815742)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D16" type="OmniLight3D" parent="Lights" unique_id=2003995597]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3425515, 2.1260884, -7.238184)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D17" type="OmniLight3D" parent="Lights" unique_id=1097916686]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3425515, 2.1260884, 3.6376555)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D18" type="OmniLight3D" parent="Lights" unique_id=1053361029]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3425515, 2.1260884, 19.066946)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D19" type="OmniLight3D" parent="Lights" unique_id=188620447]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.63612, 2.1260884, 19.066946)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D20" type="OmniLight3D" parent="Lights" unique_id=219702980]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.63612, 2.1260884, 7.49564)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D21" type="OmniLight3D" parent="Lights" unique_id=181562459]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.63612, 2.1260884, -7.388741)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="Lights" unique_id=258105399]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 9.379075, 14.868905, 10.153358)
+light_color = Color(1, 0.71123004, 0.5032385, 1)
+light_energy = 2.425
+light_specular = 2.851
+spot_range = 21.357073
+spot_angle = 42.63731
+
+[node name="OmniLight3D22" type="OmniLight3D" parent="Lights" unique_id=2125770492]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.661564, 3.5900195, 21.294474)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D23" type="OmniLight3D" parent="Lights" unique_id=1452736834]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.60256386, 3.5900195, 21.294474)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D24" type="OmniLight3D" parent="Lights" unique_id=859356089]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.931959, 3.5900195, 21.294474)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D25" type="OmniLight3D" parent="Lights" unique_id=32966795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.300423, 4.301463, -17.869526)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D26" type="OmniLight3D" parent="Lights" unique_id=1933003813]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.300423, 4.301463, -4.8599167)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D27" type="OmniLight3D" parent="Lights" unique_id=522215381]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.300423, 4.301463, 10.034466)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D28" type="OmniLight3D" parent="Lights" unique_id=1530792966]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.300423, 4.301463, 27.719337)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D29" type="OmniLight3D" parent="Lights" unique_id=296881867]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.300423, 4.301463, 43.90805)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D30" type="OmniLight3D" parent="Lights" unique_id=628256773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.791832, 4.301463, 48.411346)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D31" type="OmniLight3D" parent="Lights" unique_id=1282677572]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80.137054, 4.301463, 48.411346)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D32" type="OmniLight3D" parent="Lights" unique_id=139420849]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.672035, 4.301463, 48.411346)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D33" type="OmniLight3D" parent="Lights" unique_id=1925146369]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.672035, 4.301463, 29.858582)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D34" type="OmniLight3D" parent="Lights" unique_id=989664064]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.672035, 4.301463, 7.311615)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D35" type="OmniLight3D" parent="Lights" unique_id=1282841855]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.672035, 4.301463, -18.45911)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D36" type="OmniLight3D" parent="Lights" unique_id=1732845032]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.92793, 5.291293, -18.45911)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D37" type="OmniLight3D" parent="Lights" unique_id=1751811150]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.35602, 5.291293, -18.45911)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="Lights" unique_id=2132008465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.850266, 2.1374445, -21.139124)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D38" type="OmniLight3D" parent="Lights" unique_id=814051039]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.74009, 2.1374445, -21.139124)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D39" type="OmniLight3D" parent="Lights" unique_id=318134941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.41759, 2.1374445, -21.139124)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D40" type="OmniLight3D" parent="Lights" unique_id=365518880]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.850266, 2.1374445, -45.291283)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D41" type="OmniLight3D" parent="Lights" unique_id=1065064964]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.22543, 2.1374445, -48.532505)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D42" type="OmniLight3D" parent="Lights" unique_id=474892717]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.90293, 2.1374445, -48.532505)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D43" type="OmniLight3D" parent="Lights" unique_id=1677218006]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.850266, 2.1374445, -32.76459)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D44" type="OmniLight3D" parent="Lights" unique_id=1559187335]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.58107, 2.1374445, 50.91904)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D45" type="OmniLight3D" parent="Lights" unique_id=1672781264]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.75702, 7.8413677, 57.93793)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+omni_range = 3.4269915
+
+[node name="OmniLight3D46" type="OmniLight3D" parent="Lights" unique_id=59865871]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -103.06173, 11.75754, 49.54839)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D47" type="OmniLight3D" parent="Lights" unique_id=1794179009]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.631205, 2.637852, 52.17626)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="OmniLight3D48" type="OmniLight3D" parent="Lights" unique_id=2019229531]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.736298, 7.8413677, 50.696247)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+omni_range = 3.4269915
+
+[node name="OmniLight3D49" type="OmniLight3D" parent="Lights" unique_id=516370439]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.349031, 12.797979, 55.95477)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
 [node name="ProtoController" parent="." unique_id=697205900 instance=ExtResource("1_m802k")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80.71552, 15.588713, 24.615927)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.672022, 0.06804049, -10.259848)
+can_sprint = true
+base_speed = 10.0
+sprint_speed = 15.0
