@@ -27,6 +27,7 @@ environment = SubResource("Environment_2djvx")
 transform = Transform3D(0.88941646, 0.2542815, -0.37984115, 0, 0.8309845, 0.55629563, 0.45709777, -0.49477848, 0.7390913, 0, 0, 0)
 light_color = Color(1, 0.8862745, 0.78431374, 1)
 shadow_enabled = true
+directional_shadow_max_distance = 130.7
 
 [node name="Castle" type="CSGCombiner3D" parent="." unique_id=1251553216]
 use_collision = true
