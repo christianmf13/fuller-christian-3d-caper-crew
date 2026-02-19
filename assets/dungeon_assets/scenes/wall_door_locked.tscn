@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bncwtltwfpxgs"]
+
+[ext_resource type="PackedScene" uid="uid://h7r5tdjlysy8" path="res://assets/dungeon_assets/building/wall_doorway.glb" id="1_gbky0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lsp68"]
+size = Vector3(4, 4, 0.7652588)
+
+[node name="Wall Door Locked" type="StaticBody3D" unique_id=2102073999]
+
+[node name="wall_doorway2" parent="." unique_id=822992411 instance=ExtResource("1_gbky0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16314292, 0, 0.29455686)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1873291514]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.164258, 2, 0.29522705)
+shape = SubResource("BoxShape3D_lsp68")
+debug_color = Color(0, 0.6, 0.69803923, 1)

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://djtsh14dou5wl"]
+
+[ext_resource type="PackedScene" uid="uid://dfskv3yg617s7" path="res://assets/dungeon_assets/props/table_medium.glb" id="1_7rt28"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ahmoi"]
+size = Vector3(2.010254, 0.2, 2.018219)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3mub8"]
+size = Vector3(1.8134034, 0.8, 0.4038086)
+
+[node name="Table Medium" type="StaticBody3D" unique_id=41010760]
+
+[node name="table_medium" parent="." unique_id=1215601908 instance=ExtResource("1_7rt28")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.030179858, 0, 0.13750148)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=398422687]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03112793, 0.9, 0.13417053)
+shape = SubResource("BoxShape3D_ahmoi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1399163899]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.031848162, 0.4, -0.5658692)
+shape = SubResource("BoxShape3D_3mub8")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=498774371]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.031848162, 0.4, 0.83413076)
+shape = SubResource("BoxShape3D_3mub8")

@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://cm4prvusr7stj"]
+
+[ext_resource type="PackedScene" uid="uid://khmimgqlfvji" path="res://assets/dungeon_assets/props/coin_stack.glb" id="1_bdfpy"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_tfntx"]
+height = 1.1773926
+radius = 0.1665039
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_kj48m"]
+height = 0.765625
+radius = 0.16845703
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_gphrk"]
+height = 0.47533265
+radius = 0.17041016
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_q3led"]
+height = 0.12875974
+radius = 0.17041016
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_al8uk"]
+height = 0.23461914
+radius = 0.1694336
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2et8x"]
+height = 0.9
+radius = 0.16748047
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_34676"]
+height = 0.51362306
+radius = 0.16748047
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_kr2w3"]
+height = 0.6499268
+radius = 0.16845703
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_saqox"]
+height = 0.44102782
+radius = 0.17382813
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_8iq4k"]
+height = 0.35461426
+radius = 0.16601563
+
+[node name="Coin Stack" type="RigidBody3D" unique_id=441007320]
+
+[node name="coin_stack" parent="." unique_id=875171569 instance=ExtResource("1_bdfpy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.114082575, -1.1920929e-07, -0.07216573)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1457746153]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15572186, 0.57404786, -0.068044186)
+shape = SubResource("CylinderShape3D_tfntx")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1271335944]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14481983, 0.3828125, 0.1441856)
+shape = SubResource("CylinderShape3D_kj48m")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=1981666815]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1025919, 0.23941647, 0.2796433)
+shape = SubResource("CylinderShape3D_gphrk")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." unique_id=818205076]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28605625, 0.0632568, 0.5946214)
+shape = SubResource("CylinderShape3D_q3led")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="." unique_id=1554380275]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1704182, 0.0632568, -0.59193236)
+shape = SubResource("CylinderShape3D_q3led")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="." unique_id=1462305740]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.49242973, 0.0632568, -0.71563816)
+shape = SubResource("CylinderShape3D_q3led")
+
+[node name="CollisionShape3D7" type="CollisionShape3D" parent="." unique_id=1364779131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42203084, 0.11730957, -0.05253534)
+shape = SubResource("CylinderShape3D_al8uk")
+
+[node name="CollisionShape3D8" type="CollisionShape3D" parent="." unique_id=1090382311]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1484734, 0.45, -0.25016814)
+shape = SubResource("CylinderShape3D_2et8x")
+
+[node name="CollisionShape3D9" type="CollisionShape3D" parent="." unique_id=1686293713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.118769616, 0.2592529, -0.39594215)
+shape = SubResource("CylinderShape3D_34676")
+
+[node name="CollisionShape3D10" type="CollisionShape3D" parent="." unique_id=1732309230]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.36841604, 0.3307251, 0.16741073)
+shape = SubResource("CylinderShape3D_kr2w3")
+
+[node name="CollisionShape3D11" type="CollisionShape3D" parent="." unique_id=1467287619]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.42073202, 0.20664677, -0.21698602)
+shape = SubResource("CylinderShape3D_saqox")
+
+[node name="CollisionShape3D12" type="CollisionShape3D" parent="." unique_id=18649004]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.66602796, 0.17730713, 0.030197203)
+shape = SubResource("CylinderShape3D_8iq4k")

@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dyyvytroeqlci"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_m802k"]
+[ext_resource type="PackedScene" uid="uid://cgcp3w5pn0whl" path="res://assets/dungeon_assets/scenes/floor_stone.tscn" id="2_2djvx"]
+[ext_resource type="PackedScene" uid="uid://cbihvr5fvuo4p" path="res://assets/dungeon_assets/scenes/wall.tscn" id="3_uvc87"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_m802k"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -18,6 +20,10 @@ tonemap_mode = 2
 ssao_enabled = true
 glow_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdh5e"]
+transparency = 1
+albedo_color = Color(1, 0.38431373, 1, 0.047058824)
+
 [node name="Level 01" type="Node3D" unique_id=1657039867]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=41655755]
@@ -30,6 +36,7 @@ shadow_enabled = true
 directional_shadow_max_distance = 130.7
 
 [node name="Castle" type="CSGCombiner3D" parent="." unique_id=1251553216]
+material_override = SubResource("StandardMaterial3D_qdh5e")
 use_collision = true
 
 [node name="Floor" type="CSGBox3D" parent="Castle" unique_id=1831492579]
@@ -1780,6 +1787,7 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 17.1
 size = Vector3(12.962512, 5.0623484, 2.9329638)
 
 [node name="Lights" type="Node3D" parent="." unique_id=1074144364]
+visible = false
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Lights" unique_id=717327595]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 14.868905, -34.450348)
@@ -2114,3 +2122,1819 @@ transform = Transform3D(-0.2869927, 0, 0.9579328, 0, 1, 0, -0.9579328, 0, -0.286
 can_sprint = true
 base_speed = 10.0
 sprint_speed = 15.0
+
+[node name="Set Dressing" type="Node" parent="." unique_id=1859241669]
+
+[node name="Outside Floor" type="Node" parent="Set Dressing" unique_id=439383390]
+
+[node name="Floor Stone" parent="Set Dressing/Outside Floor" unique_id=1073803313 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114.3, 0, 72.6)
+
+[node name="Floor Stone2" parent="Set Dressing/Outside Floor" unique_id=2068789767 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110.3, 0, 72.6)
+
+[node name="Floor Stone3" parent="Set Dressing/Outside Floor" unique_id=1818354753 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.3, 0, 72.6)
+
+[node name="Floor Stone4" parent="Set Dressing/Outside Floor" unique_id=1310353339 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.3, 0, 72.6)
+
+[node name="Floor Stone5" parent="Set Dressing/Outside Floor" unique_id=860648882 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.3, 0, 72.6)
+
+[node name="Floor Stone6" parent="Set Dressing/Outside Floor" unique_id=2041593452 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.3, 0, 72.6)
+
+[node name="Floor Stone7" parent="Set Dressing/Outside Floor" unique_id=2057060276 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.3, 0, 72.6)
+
+[node name="Floor Stone8" parent="Set Dressing/Outside Floor" unique_id=327733472 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.3, 0, 72.6)
+
+[node name="Floor Stone9" parent="Set Dressing/Outside Floor" unique_id=1155394708 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.3, 0, 72.6)
+
+[node name="Floor Stone10" parent="Set Dressing/Outside Floor" unique_id=739819555 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.3, 0, 72.6)
+
+[node name="Floor Stone11" parent="Set Dressing/Outside Floor" unique_id=995643520 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.3, 0, 72.6)
+
+[node name="Floor Stone12" parent="Set Dressing/Outside Floor" unique_id=487325516 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.3, 0, 72.6)
+
+[node name="Floor Stone13" parent="Set Dressing/Outside Floor" unique_id=1934527625 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.3, 0, 72.6)
+
+[node name="Floor Stone14" parent="Set Dressing/Outside Floor" unique_id=213009279 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.300003, 0, 72.6)
+
+[node name="Floor Stone15" parent="Set Dressing/Outside Floor" unique_id=2085723447 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.300003, 0, 72.6)
+
+[node name="Floor Stone16" parent="Set Dressing/Outside Floor" unique_id=624012441 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.300003, 0, 72.6)
+
+[node name="Floor Stone17" parent="Set Dressing/Outside Floor" unique_id=762887268 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.300003, 0, 72.6)
+
+[node name="Floor Stone18" parent="Set Dressing/Outside Floor" unique_id=1326804951 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.300003, 0, 72.6)
+
+[node name="Floor Stone19" parent="Set Dressing/Outside Floor" unique_id=66833236 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.300003, 0, 72.6)
+
+[node name="Floor Stone20" parent="Set Dressing/Outside Floor" unique_id=2145284776 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.300003, 0, 72.6)
+
+[node name="Floor Stone21" parent="Set Dressing/Outside Floor" unique_id=1120505696 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.300003, 0, 72.6)
+
+[node name="Floor Stone22" parent="Set Dressing/Outside Floor" unique_id=330272275 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.300003, 0, 72.6)
+
+[node name="Floor Stone23" parent="Set Dressing/Outside Floor" unique_id=1700513416 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.300003, 0, 72.6)
+
+[node name="Floor Stone24" parent="Set Dressing/Outside Floor" unique_id=358326630 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.300003, 0, 72.6)
+
+[node name="Floor Stone25" parent="Set Dressing/Outside Floor" unique_id=2068582258 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.300003, 0, 72.6)
+
+[node name="Floor Stone26" parent="Set Dressing/Outside Floor" unique_id=1745756523 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.300003, 0, 72.6)
+
+[node name="Floor Stone27" parent="Set Dressing/Outside Floor" unique_id=744711238 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.300003, 0, 72.6)
+
+[node name="Floor Stone28" parent="Set Dressing/Outside Floor" unique_id=1425078773 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.300003, 0, 72.6)
+
+[node name="Floor Stone29" parent="Set Dressing/Outside Floor" unique_id=128556615 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.300003, 0, 72.6)
+
+[node name="Floor Stone30" parent="Set Dressing/Outside Floor" unique_id=1673191685 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.699997, 0, 72.6)
+
+[node name="Floor Stone31" parent="Set Dressing/Outside Floor" unique_id=1161669907 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.699997, 0, 72.6)
+
+[node name="Floor Stone32" parent="Set Dressing/Outside Floor" unique_id=373891247 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.699997, 0, 72.6)
+
+[node name="Floor Stone33" parent="Set Dressing/Outside Floor" unique_id=1908201910 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.699997, 0, 72.6)
+
+[node name="Floor Stone34" parent="Set Dressing/Outside Floor" unique_id=2038566249 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.699997, 0, 72.6)
+
+[node name="Floor Stone35" parent="Set Dressing/Outside Floor" unique_id=1380365644 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.699997, 0, 72.6)
+
+[node name="Floor Stone36" parent="Set Dressing/Outside Floor" unique_id=1320986354 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.699997, 0, 72.6)
+
+[node name="Floor Stone37" parent="Set Dressing/Outside Floor" unique_id=1707538526 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.699997, 0, 72.6)
+
+[node name="Floor Stone38" parent="Set Dressing/Outside Floor" unique_id=992884529 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114.3, 0, 68.6)
+
+[node name="Floor Stone39" parent="Set Dressing/Outside Floor" unique_id=908114548 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110.3, 0, 68.6)
+
+[node name="Floor Stone40" parent="Set Dressing/Outside Floor" unique_id=744799346 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.3, 0, 68.6)
+
+[node name="Floor Stone41" parent="Set Dressing/Outside Floor" unique_id=883390212 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.3, 0, 68.6)
+
+[node name="Floor Stone42" parent="Set Dressing/Outside Floor" unique_id=1845287605 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.3, 0, 68.6)
+
+[node name="Floor Stone43" parent="Set Dressing/Outside Floor" unique_id=1642478079 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.3, 0, 68.6)
+
+[node name="Floor Stone44" parent="Set Dressing/Outside Floor" unique_id=426852443 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.3, 0, 68.6)
+
+[node name="Floor Stone45" parent="Set Dressing/Outside Floor" unique_id=888225697 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.3, 0, 68.6)
+
+[node name="Floor Stone46" parent="Set Dressing/Outside Floor" unique_id=1764528026 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.3, 0, 68.6)
+
+[node name="Floor Stone47" parent="Set Dressing/Outside Floor" unique_id=906935891 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.3, 0, 68.6)
+
+[node name="Floor Stone48" parent="Set Dressing/Outside Floor" unique_id=1587665993 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.3, 0, 68.6)
+
+[node name="Floor Stone49" parent="Set Dressing/Outside Floor" unique_id=1653881918 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.3, 0, 68.6)
+
+[node name="Floor Stone50" parent="Set Dressing/Outside Floor" unique_id=1107906939 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.3, 0, 68.6)
+
+[node name="Floor Stone51" parent="Set Dressing/Outside Floor" unique_id=1240853490 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.300003, 0, 68.6)
+
+[node name="Floor Stone52" parent="Set Dressing/Outside Floor" unique_id=2011237477 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.300003, 0, 68.6)
+
+[node name="Floor Stone53" parent="Set Dressing/Outside Floor" unique_id=142379279 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.300003, 0, 68.6)
+
+[node name="Floor Stone54" parent="Set Dressing/Outside Floor" unique_id=1283276516 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.300003, 0, 68.6)
+
+[node name="Floor Stone55" parent="Set Dressing/Outside Floor" unique_id=758154020 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.300003, 0, 68.6)
+
+[node name="Floor Stone56" parent="Set Dressing/Outside Floor" unique_id=1371032957 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.300003, 0, 68.6)
+
+[node name="Floor Stone57" parent="Set Dressing/Outside Floor" unique_id=517893665 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.300003, 0, 68.6)
+
+[node name="Floor Stone58" parent="Set Dressing/Outside Floor" unique_id=2034259671 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.300003, 0, 68.6)
+
+[node name="Floor Stone59" parent="Set Dressing/Outside Floor" unique_id=991126528 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.300003, 0, 68.6)
+
+[node name="Floor Stone60" parent="Set Dressing/Outside Floor" unique_id=27827673 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.300003, 0, 68.6)
+
+[node name="Floor Stone61" parent="Set Dressing/Outside Floor" unique_id=433173957 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.300003, 0, 68.6)
+
+[node name="Floor Stone62" parent="Set Dressing/Outside Floor" unique_id=54228435 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.300003, 0, 68.6)
+
+[node name="Floor Stone63" parent="Set Dressing/Outside Floor" unique_id=1447269400 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.300003, 0, 68.6)
+
+[node name="Floor Stone64" parent="Set Dressing/Outside Floor" unique_id=1186942215 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.300003, 0, 68.6)
+
+[node name="Floor Stone65" parent="Set Dressing/Outside Floor" unique_id=1453269872 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.300003, 0, 68.6)
+
+[node name="Floor Stone66" parent="Set Dressing/Outside Floor" unique_id=450605878 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.300003, 0, 68.6)
+
+[node name="Floor Stone67" parent="Set Dressing/Outside Floor" unique_id=1230059065 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.699997, 0, 68.6)
+
+[node name="Floor Stone68" parent="Set Dressing/Outside Floor" unique_id=1148963092 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.699997, 0, 68.6)
+
+[node name="Floor Stone69" parent="Set Dressing/Outside Floor" unique_id=1670528422 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.699997, 0, 68.6)
+
+[node name="Floor Stone70" parent="Set Dressing/Outside Floor" unique_id=1416172953 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.699997, 0, 68.6)
+
+[node name="Floor Stone71" parent="Set Dressing/Outside Floor" unique_id=1578427068 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.699997, 0, 68.6)
+
+[node name="Floor Stone72" parent="Set Dressing/Outside Floor" unique_id=696718611 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.699997, 0, 68.6)
+
+[node name="Floor Stone73" parent="Set Dressing/Outside Floor" unique_id=421337352 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.699997, 0, 68.6)
+
+[node name="Floor Stone74" parent="Set Dressing/Outside Floor" unique_id=828600815 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.699997, 0, 68.6)
+
+[node name="Floor Stone75" parent="Set Dressing/Outside Floor" unique_id=1048645634 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114.3, 0, 64.6)
+
+[node name="Floor Stone76" parent="Set Dressing/Outside Floor" unique_id=898212522 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110.3, 0, 64.6)
+
+[node name="Floor Stone77" parent="Set Dressing/Outside Floor" unique_id=221104647 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.3, 0, 64.6)
+
+[node name="Floor Stone78" parent="Set Dressing/Outside Floor" unique_id=1311684058 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.3, 0, 64.6)
+
+[node name="Floor Stone79" parent="Set Dressing/Outside Floor" unique_id=1499544436 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.3, 0, 64.6)
+
+[node name="Floor Stone80" parent="Set Dressing/Outside Floor" unique_id=2057502373 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.3, 0, 64.6)
+
+[node name="Floor Stone81" parent="Set Dressing/Outside Floor" unique_id=1729576243 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.3, 0, 64.6)
+
+[node name="Floor Stone82" parent="Set Dressing/Outside Floor" unique_id=439969849 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.3, 0, 64.6)
+
+[node name="Floor Stone83" parent="Set Dressing/Outside Floor" unique_id=1695530037 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.3, 0, 64.6)
+
+[node name="Floor Stone84" parent="Set Dressing/Outside Floor" unique_id=2038565278 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.3, 0, 64.6)
+
+[node name="Floor Stone85" parent="Set Dressing/Outside Floor" unique_id=1836706250 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.3, 0, 64.6)
+
+[node name="Floor Stone86" parent="Set Dressing/Outside Floor" unique_id=1235983044 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.3, 0, 64.6)
+
+[node name="Floor Stone87" parent="Set Dressing/Outside Floor" unique_id=832070678 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.3, 0, 64.6)
+
+[node name="Floor Stone88" parent="Set Dressing/Outside Floor" unique_id=175035672 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.300003, 0, 64.6)
+
+[node name="Floor Stone89" parent="Set Dressing/Outside Floor" unique_id=1637759250 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.300003, 0, 64.6)
+
+[node name="Floor Stone90" parent="Set Dressing/Outside Floor" unique_id=295200204 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.300003, 0, 64.6)
+
+[node name="Floor Stone91" parent="Set Dressing/Outside Floor" unique_id=1655093375 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.300003, 0, 64.6)
+
+[node name="Floor Stone92" parent="Set Dressing/Outside Floor" unique_id=497577405 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.300003, 0, 64.6)
+
+[node name="Floor Stone93" parent="Set Dressing/Outside Floor" unique_id=886634160 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.300003, 0, 64.6)
+
+[node name="Floor Stone94" parent="Set Dressing/Outside Floor" unique_id=128529895 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.300003, 0, 64.6)
+
+[node name="Floor Stone95" parent="Set Dressing/Outside Floor" unique_id=1840941110 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.300003, 0, 64.6)
+
+[node name="Floor Stone96" parent="Set Dressing/Outside Floor" unique_id=636175538 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.300003, 0, 64.6)
+
+[node name="Floor Stone97" parent="Set Dressing/Outside Floor" unique_id=1757512550 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.300003, 0, 64.6)
+
+[node name="Floor Stone98" parent="Set Dressing/Outside Floor" unique_id=1637898983 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.300003, 0, 64.6)
+
+[node name="Floor Stone99" parent="Set Dressing/Outside Floor" unique_id=2015421640 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.300003, 0, 64.6)
+
+[node name="Floor Stone100" parent="Set Dressing/Outside Floor" unique_id=1429912075 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.300003, 0, 64.6)
+
+[node name="Floor Stone101" parent="Set Dressing/Outside Floor" unique_id=1621565998 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.300003, 0, 64.6)
+
+[node name="Floor Stone102" parent="Set Dressing/Outside Floor" unique_id=1922523620 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.300003, 0, 64.6)
+
+[node name="Floor Stone103" parent="Set Dressing/Outside Floor" unique_id=1463212175 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.300003, 0, 64.6)
+
+[node name="Floor Stone104" parent="Set Dressing/Outside Floor" unique_id=1685382499 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.699997, 0, 64.6)
+
+[node name="Floor Stone105" parent="Set Dressing/Outside Floor" unique_id=1632228289 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.699997, 0, 64.6)
+
+[node name="Floor Stone106" parent="Set Dressing/Outside Floor" unique_id=1747851591 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.699997, 0, 64.6)
+
+[node name="Floor Stone107" parent="Set Dressing/Outside Floor" unique_id=1164596676 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.699997, 0, 64.6)
+
+[node name="Floor Stone108" parent="Set Dressing/Outside Floor" unique_id=401862557 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.699997, 0, 64.6)
+
+[node name="Floor Stone109" parent="Set Dressing/Outside Floor" unique_id=92468864 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.699997, 0, 64.6)
+
+[node name="Floor Stone110" parent="Set Dressing/Outside Floor" unique_id=1678631199 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.699997, 0, 64.6)
+
+[node name="Floor Stone111" parent="Set Dressing/Outside Floor" unique_id=2137817498 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.699997, 0, 64.6)
+
+[node name="Floor Stone112" parent="Set Dressing/Outside Floor" unique_id=1353692418 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114.3, 0, 60.6)
+
+[node name="Floor Stone113" parent="Set Dressing/Outside Floor" unique_id=531287438 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110.3, 0, 60.6)
+
+[node name="Floor Stone114" parent="Set Dressing/Outside Floor" unique_id=1568262850 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.3, 0, 60.6)
+
+[node name="Floor Stone115" parent="Set Dressing/Outside Floor" unique_id=978588089 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.3, 0, 60.6)
+
+[node name="Floor Stone116" parent="Set Dressing/Outside Floor" unique_id=348730514 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.3, 0, 60.6)
+
+[node name="Floor Stone117" parent="Set Dressing/Outside Floor" unique_id=851621698 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.3, 0, 60.6)
+
+[node name="Floor Stone118" parent="Set Dressing/Outside Floor" unique_id=618397903 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.3, 0, 60.6)
+
+[node name="Floor Stone119" parent="Set Dressing/Outside Floor" unique_id=817740510 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.3, 0, 60.6)
+
+[node name="Floor Stone120" parent="Set Dressing/Outside Floor" unique_id=362903665 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.3, 0, 60.6)
+
+[node name="Floor Stone121" parent="Set Dressing/Outside Floor" unique_id=32905231 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.3, 0, 60.6)
+
+[node name="Floor Stone122" parent="Set Dressing/Outside Floor" unique_id=979177642 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.3, 0, 60.6)
+
+[node name="Floor Stone123" parent="Set Dressing/Outside Floor" unique_id=1138992789 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.3, 0, 60.6)
+
+[node name="Floor Stone124" parent="Set Dressing/Outside Floor" unique_id=2029444657 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.3, 0, 60.6)
+
+[node name="Floor Stone125" parent="Set Dressing/Outside Floor" unique_id=1887928734 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.300003, 0, 60.6)
+
+[node name="Floor Stone126" parent="Set Dressing/Outside Floor" unique_id=99231177 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.300003, 0, 60.6)
+
+[node name="Floor Stone127" parent="Set Dressing/Outside Floor" unique_id=119419221 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.300003, 0, 60.6)
+
+[node name="Floor Stone128" parent="Set Dressing/Outside Floor" unique_id=444338372 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.300003, 0, 60.6)
+
+[node name="Floor Stone129" parent="Set Dressing/Outside Floor" unique_id=1158137937 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.300003, 0, 60.6)
+
+[node name="Floor Stone130" parent="Set Dressing/Outside Floor" unique_id=1928996773 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.300003, 0, 60.6)
+
+[node name="Floor Stone131" parent="Set Dressing/Outside Floor" unique_id=1849998050 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.300003, 0, 60.6)
+
+[node name="Floor Stone132" parent="Set Dressing/Outside Floor" unique_id=922348029 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.300003, 0, 60.6)
+
+[node name="Floor Stone133" parent="Set Dressing/Outside Floor" unique_id=1194769581 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.300003, 0, 60.6)
+
+[node name="Floor Stone134" parent="Set Dressing/Outside Floor" unique_id=1285334645 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.300003, 0, 60.6)
+
+[node name="Floor Stone135" parent="Set Dressing/Outside Floor" unique_id=2057115899 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.300003, 0, 60.6)
+
+[node name="Floor Stone136" parent="Set Dressing/Outside Floor" unique_id=1856673104 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.300003, 0, 60.6)
+
+[node name="Floor Stone137" parent="Set Dressing/Outside Floor" unique_id=1316449842 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.300003, 0, 60.6)
+
+[node name="Floor Stone138" parent="Set Dressing/Outside Floor" unique_id=24562101 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.300003, 0, 60.6)
+
+[node name="Floor Stone139" parent="Set Dressing/Outside Floor" unique_id=1036986209 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.300003, 0, 60.6)
+
+[node name="Floor Stone140" parent="Set Dressing/Outside Floor" unique_id=556059187 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.300003, 0, 60.6)
+
+[node name="Floor Stone141" parent="Set Dressing/Outside Floor" unique_id=51044772 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.699997, 0, 60.6)
+
+[node name="Floor Stone142" parent="Set Dressing/Outside Floor" unique_id=1085423908 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.699997, 0, 60.6)
+
+[node name="Floor Stone143" parent="Set Dressing/Outside Floor" unique_id=2065218261 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.699997, 0, 60.6)
+
+[node name="Floor Stone144" parent="Set Dressing/Outside Floor" unique_id=1009191669 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.699997, 0, 60.6)
+
+[node name="Floor Stone145" parent="Set Dressing/Outside Floor" unique_id=1846515514 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.699997, 0, 60.6)
+
+[node name="Floor Stone146" parent="Set Dressing/Outside Floor" unique_id=627014690 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.699997, 0, 60.6)
+
+[node name="Floor Stone147" parent="Set Dressing/Outside Floor" unique_id=1292613911 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.699997, 0, 60.6)
+
+[node name="Floor Stone148" parent="Set Dressing/Outside Floor" unique_id=2136214732 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.699997, 0, 60.6)
+
+[node name="Floor Stone149" parent="Set Dressing/Outside Floor" unique_id=155570428 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114.3, 0, 56.6)
+
+[node name="Floor Stone150" parent="Set Dressing/Outside Floor" unique_id=49728331 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110.3, 0, 56.6)
+
+[node name="Floor Stone151" parent="Set Dressing/Outside Floor" unique_id=1005259763 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.3, 0, 56.6)
+
+[node name="Floor Stone152" parent="Set Dressing/Outside Floor" unique_id=1253300810 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.3, 0, 56.6)
+
+[node name="Floor Stone153" parent="Set Dressing/Outside Floor" unique_id=1634580920 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.3, 0, 56.6)
+
+[node name="Floor Stone154" parent="Set Dressing/Outside Floor" unique_id=1750198399 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.3, 0, 56.6)
+
+[node name="Floor Stone155" parent="Set Dressing/Outside Floor" unique_id=800208279 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.3, 0, 56.6)
+
+[node name="Floor Stone156" parent="Set Dressing/Outside Floor" unique_id=1844687332 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.3, 0, 56.6)
+
+[node name="Floor Stone157" parent="Set Dressing/Outside Floor" unique_id=922758254 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.3, 0, 56.6)
+
+[node name="Floor Stone158" parent="Set Dressing/Outside Floor" unique_id=1914630198 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.3, 0, 56.6)
+
+[node name="Floor Stone159" parent="Set Dressing/Outside Floor" unique_id=590027043 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.3, 0, 56.6)
+
+[node name="Floor Stone160" parent="Set Dressing/Outside Floor" unique_id=647100519 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.3, 0, 56.6)
+
+[node name="Floor Stone161" parent="Set Dressing/Outside Floor" unique_id=862431531 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.3, 0, 56.6)
+
+[node name="Floor Stone162" parent="Set Dressing/Outside Floor" unique_id=838821295 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.300003, 0, 56.6)
+
+[node name="Floor Stone163" parent="Set Dressing/Outside Floor" unique_id=1357776134 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.300003, 0, 56.6)
+
+[node name="Floor Stone164" parent="Set Dressing/Outside Floor" unique_id=2124537524 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.300003, 0, 56.6)
+
+[node name="Floor Stone165" parent="Set Dressing/Outside Floor" unique_id=995825319 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.300003, 0, 56.6)
+
+[node name="Floor Stone166" parent="Set Dressing/Outside Floor" unique_id=309609193 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.300003, 0, 56.6)
+
+[node name="Floor Stone167" parent="Set Dressing/Outside Floor" unique_id=452057436 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.300003, 0, 56.6)
+
+[node name="Floor Stone168" parent="Set Dressing/Outside Floor" unique_id=2137633287 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.300003, 0, 56.6)
+
+[node name="Floor Stone169" parent="Set Dressing/Outside Floor" unique_id=211483757 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.300003, 0, 56.6)
+
+[node name="Floor Stone170" parent="Set Dressing/Outside Floor" unique_id=2132407296 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.300003, 0, 56.6)
+
+[node name="Floor Stone171" parent="Set Dressing/Outside Floor" unique_id=331212026 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.300003, 0, 56.6)
+
+[node name="Floor Stone172" parent="Set Dressing/Outside Floor" unique_id=274718080 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.300003, 0, 56.6)
+
+[node name="Floor Stone173" parent="Set Dressing/Outside Floor" unique_id=1668323540 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.300003, 0, 56.6)
+
+[node name="Floor Stone174" parent="Set Dressing/Outside Floor" unique_id=794557397 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.300003, 0, 56.6)
+
+[node name="Floor Stone175" parent="Set Dressing/Outside Floor" unique_id=2140149669 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.300003, 0, 56.6)
+
+[node name="Floor Stone176" parent="Set Dressing/Outside Floor" unique_id=2095270253 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.300003, 0, 56.6)
+
+[node name="Floor Stone177" parent="Set Dressing/Outside Floor" unique_id=494518008 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.300003, 0, 56.6)
+
+[node name="Floor Stone178" parent="Set Dressing/Outside Floor" unique_id=161245653 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.699997, 0, 56.6)
+
+[node name="Floor Stone179" parent="Set Dressing/Outside Floor" unique_id=1826287704 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.699997, 0, 56.6)
+
+[node name="Floor Stone180" parent="Set Dressing/Outside Floor" unique_id=1267940370 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.699997, 0, 56.6)
+
+[node name="Floor Stone181" parent="Set Dressing/Outside Floor" unique_id=649463348 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.699997, 0, 56.6)
+
+[node name="Floor Stone182" parent="Set Dressing/Outside Floor" unique_id=1206609022 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.699997, 0, 56.6)
+
+[node name="Floor Stone183" parent="Set Dressing/Outside Floor" unique_id=1756549540 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.699997, 0, 56.6)
+
+[node name="Floor Stone184" parent="Set Dressing/Outside Floor" unique_id=1959588943 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.699997, 0, 56.6)
+
+[node name="Floor Stone185" parent="Set Dressing/Outside Floor" unique_id=1775644496 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.699997, 0, 56.6)
+
+[node name="Floor Stone186" parent="Set Dressing/Outside Floor" unique_id=343547374 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114.3, 0, 52.6)
+
+[node name="Floor Stone187" parent="Set Dressing/Outside Floor" unique_id=642402487 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110.3, 0, 52.6)
+
+[node name="Floor Stone188" parent="Set Dressing/Outside Floor" unique_id=515751211 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.3, 0, 52.6)
+
+[node name="Floor Stone189" parent="Set Dressing/Outside Floor" unique_id=1507620398 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.3, 0, 52.6)
+
+[node name="Floor Stone190" parent="Set Dressing/Outside Floor" unique_id=1594125586 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.3, 0, 52.6)
+
+[node name="Floor Stone191" parent="Set Dressing/Outside Floor" unique_id=1424093334 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.3, 0, 52.6)
+
+[node name="Floor Stone192" parent="Set Dressing/Outside Floor" unique_id=778172191 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.3, 0, 52.6)
+
+[node name="Floor Stone193" parent="Set Dressing/Outside Floor" unique_id=1108505488 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.3, 0, 52.6)
+
+[node name="Floor Stone194" parent="Set Dressing/Outside Floor" unique_id=1853602176 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.3, 0, 52.6)
+
+[node name="Floor Stone195" parent="Set Dressing/Outside Floor" unique_id=177974677 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.3, 0, 52.6)
+
+[node name="Floor Stone196" parent="Set Dressing/Outside Floor" unique_id=769676948 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.3, 0, 52.6)
+
+[node name="Floor Stone197" parent="Set Dressing/Outside Floor" unique_id=2096170659 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.3, 0, 52.6)
+
+[node name="Floor Stone198" parent="Set Dressing/Outside Floor" unique_id=1832730752 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.3, 0, 52.6)
+
+[node name="Floor Stone199" parent="Set Dressing/Outside Floor" unique_id=17849520 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.300003, 0, 52.6)
+
+[node name="Floor Stone200" parent="Set Dressing/Outside Floor" unique_id=2109195101 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.300003, 0, 52.6)
+
+[node name="Floor Stone201" parent="Set Dressing/Outside Floor" unique_id=1019045149 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.300003, 0, 52.6)
+
+[node name="Floor Stone202" parent="Set Dressing/Outside Floor" unique_id=608846157 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.300003, 0, 52.6)
+
+[node name="Floor Stone203" parent="Set Dressing/Outside Floor" unique_id=788906292 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.300003, 0, 52.6)
+
+[node name="Floor Stone204" parent="Set Dressing/Outside Floor" unique_id=1511606641 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.300003, 0, 52.6)
+
+[node name="Floor Stone205" parent="Set Dressing/Outside Floor" unique_id=326303265 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.300003, 0, 52.6)
+
+[node name="Floor Stone206" parent="Set Dressing/Outside Floor" unique_id=1607073367 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.300003, 0, 52.6)
+
+[node name="Floor Stone207" parent="Set Dressing/Outside Floor" unique_id=1855457392 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.300003, 0, 52.6)
+
+[node name="Floor Stone208" parent="Set Dressing/Outside Floor" unique_id=681908517 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.300003, 0, 52.6)
+
+[node name="Floor Stone209" parent="Set Dressing/Outside Floor" unique_id=1753177024 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.300003, 0, 52.6)
+
+[node name="Floor Stone210" parent="Set Dressing/Outside Floor" unique_id=574652143 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.300003, 0, 52.6)
+
+[node name="Floor Stone211" parent="Set Dressing/Outside Floor" unique_id=2070840243 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.300003, 0, 52.6)
+
+[node name="Floor Stone212" parent="Set Dressing/Outside Floor" unique_id=1852612191 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.300003, 0, 52.6)
+
+[node name="Floor Stone213" parent="Set Dressing/Outside Floor" unique_id=1826427720 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.300003, 0, 52.6)
+
+[node name="Floor Stone214" parent="Set Dressing/Outside Floor" unique_id=1724210810 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.300003, 0, 52.6)
+
+[node name="Floor Stone215" parent="Set Dressing/Outside Floor" unique_id=229445493 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.699997, 0, 52.6)
+
+[node name="Floor Stone216" parent="Set Dressing/Outside Floor" unique_id=639155887 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.699997, 0, 52.6)
+
+[node name="Floor Stone217" parent="Set Dressing/Outside Floor" unique_id=361307708 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.699997, 0, 52.6)
+
+[node name="Floor Stone218" parent="Set Dressing/Outside Floor" unique_id=1794165879 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.699997, 0, 52.6)
+
+[node name="Floor Stone219" parent="Set Dressing/Outside Floor" unique_id=136350024 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.699997, 0, 52.6)
+
+[node name="Floor Stone220" parent="Set Dressing/Outside Floor" unique_id=140132050 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.699997, 0, 52.6)
+
+[node name="Floor Stone221" parent="Set Dressing/Outside Floor" unique_id=180502624 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.699997, 0, 52.6)
+
+[node name="Floor Stone222" parent="Set Dressing/Outside Floor" unique_id=473207924 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.699997, 0, 52.6)
+
+[node name="Floor Stone339" parent="Set Dressing/Outside Floor" unique_id=1612492462 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -75.400246)
+
+[node name="Floor Stone340" parent="Set Dressing/Outside Floor" unique_id=2084707692 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -71.400246)
+
+[node name="Floor Stone341" parent="Set Dressing/Outside Floor" unique_id=1360529729 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -67.400246)
+
+[node name="Floor Stone342" parent="Set Dressing/Outside Floor" unique_id=526052473 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -63.400246)
+
+[node name="Floor Stone343" parent="Set Dressing/Outside Floor" unique_id=1239042078 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -59.400246)
+
+[node name="Floor Stone344" parent="Set Dressing/Outside Floor" unique_id=278260509 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -55.400246)
+
+[node name="Floor Stone345" parent="Set Dressing/Outside Floor" unique_id=415721848 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -51.400246)
+
+[node name="Floor Stone346" parent="Set Dressing/Outside Floor" unique_id=1556610163 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -47.400246)
+
+[node name="Floor Stone347" parent="Set Dressing/Outside Floor" unique_id=1582230978 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -43.400246)
+
+[node name="Floor Stone348" parent="Set Dressing/Outside Floor" unique_id=314199526 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -39.400246)
+
+[node name="Floor Stone349" parent="Set Dressing/Outside Floor" unique_id=525607607 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -35.400246)
+
+[node name="Floor Stone350" parent="Set Dressing/Outside Floor" unique_id=828474393 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -31.400246)
+
+[node name="Floor Stone351" parent="Set Dressing/Outside Floor" unique_id=1831913529 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -27.400246)
+
+[node name="Floor Stone352" parent="Set Dressing/Outside Floor" unique_id=694678580 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -23.400246)
+
+[node name="Floor Stone353" parent="Set Dressing/Outside Floor" unique_id=2009210432 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -19.400246)
+
+[node name="Floor Stone354" parent="Set Dressing/Outside Floor" unique_id=1544747153 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -15.400246)
+
+[node name="Floor Stone355" parent="Set Dressing/Outside Floor" unique_id=1498160376 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -11.400246)
+
+[node name="Floor Stone356" parent="Set Dressing/Outside Floor" unique_id=961349912 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -7.4002457)
+
+[node name="Floor Stone357" parent="Set Dressing/Outside Floor" unique_id=2096784229 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, -3.4002457)
+
+[node name="Floor Stone358" parent="Set Dressing/Outside Floor" unique_id=303264081 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, 0.59975433)
+
+[node name="Floor Stone359" parent="Set Dressing/Outside Floor" unique_id=338449674 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, 4.5997543)
+
+[node name="Floor Stone360" parent="Set Dressing/Outside Floor" unique_id=421729634 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, 8.599754)
+
+[node name="Floor Stone361" parent="Set Dressing/Outside Floor" unique_id=1996887721 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, 12.599754)
+
+[node name="Floor Stone362" parent="Set Dressing/Outside Floor" unique_id=2083040178 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, 16.599754)
+
+[node name="Floor Stone363" parent="Set Dressing/Outside Floor" unique_id=1149094701 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, 20.599754)
+
+[node name="Floor Stone364" parent="Set Dressing/Outside Floor" unique_id=781174670 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, 24.599754)
+
+[node name="Floor Stone365" parent="Set Dressing/Outside Floor" unique_id=615939254 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, 28.599754)
+
+[node name="Floor Stone366" parent="Set Dressing/Outside Floor" unique_id=1756823832 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, 32.599754)
+
+[node name="Floor Stone367" parent="Set Dressing/Outside Floor" unique_id=1972109571 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, 36.599754)
+
+[node name="Floor Stone368" parent="Set Dressing/Outside Floor" unique_id=951436166 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, 40.599754)
+
+[node name="Floor Stone369" parent="Set Dressing/Outside Floor" unique_id=184916391 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, 44.599762)
+
+[node name="Floor Stone370" parent="Set Dressing/Outside Floor" unique_id=569174915 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -114.30003, 0, 48.599762)
+
+[node name="Floor Stone376" parent="Set Dressing/Outside Floor" unique_id=583619313 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -75.400246)
+
+[node name="Floor Stone377" parent="Set Dressing/Outside Floor" unique_id=994420736 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -71.400246)
+
+[node name="Floor Stone378" parent="Set Dressing/Outside Floor" unique_id=2098977074 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -67.400246)
+
+[node name="Floor Stone379" parent="Set Dressing/Outside Floor" unique_id=1759037359 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -63.400246)
+
+[node name="Floor Stone380" parent="Set Dressing/Outside Floor" unique_id=1534054239 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -59.400246)
+
+[node name="Floor Stone381" parent="Set Dressing/Outside Floor" unique_id=1875853485 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -55.400246)
+
+[node name="Floor Stone382" parent="Set Dressing/Outside Floor" unique_id=2142518309 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -51.400246)
+
+[node name="Floor Stone383" parent="Set Dressing/Outside Floor" unique_id=497511475 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -47.400246)
+
+[node name="Floor Stone384" parent="Set Dressing/Outside Floor" unique_id=1167544510 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -43.400246)
+
+[node name="Floor Stone385" parent="Set Dressing/Outside Floor" unique_id=1921875121 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -39.400246)
+
+[node name="Floor Stone386" parent="Set Dressing/Outside Floor" unique_id=878855549 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -35.400246)
+
+[node name="Floor Stone387" parent="Set Dressing/Outside Floor" unique_id=2031594499 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -31.400246)
+
+[node name="Floor Stone388" parent="Set Dressing/Outside Floor" unique_id=1898832257 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -27.400246)
+
+[node name="Floor Stone389" parent="Set Dressing/Outside Floor" unique_id=952088728 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -23.400246)
+
+[node name="Floor Stone390" parent="Set Dressing/Outside Floor" unique_id=1280699191 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -19.400246)
+
+[node name="Floor Stone391" parent="Set Dressing/Outside Floor" unique_id=1306529163 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -15.400246)
+
+[node name="Floor Stone392" parent="Set Dressing/Outside Floor" unique_id=1181032948 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -11.400246)
+
+[node name="Floor Stone393" parent="Set Dressing/Outside Floor" unique_id=1637622545 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -7.4002457)
+
+[node name="Floor Stone394" parent="Set Dressing/Outside Floor" unique_id=410846411 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, -3.4002457)
+
+[node name="Floor Stone395" parent="Set Dressing/Outside Floor" unique_id=1422181402 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, 0.59975433)
+
+[node name="Floor Stone396" parent="Set Dressing/Outside Floor" unique_id=506070545 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, 4.5997543)
+
+[node name="Floor Stone397" parent="Set Dressing/Outside Floor" unique_id=1922066757 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, 8.599754)
+
+[node name="Floor Stone398" parent="Set Dressing/Outside Floor" unique_id=246253672 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, 12.599754)
+
+[node name="Floor Stone399" parent="Set Dressing/Outside Floor" unique_id=1897370899 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, 16.599754)
+
+[node name="Floor Stone400" parent="Set Dressing/Outside Floor" unique_id=1198636040 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, 20.599754)
+
+[node name="Floor Stone401" parent="Set Dressing/Outside Floor" unique_id=1162126718 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, 24.599754)
+
+[node name="Floor Stone402" parent="Set Dressing/Outside Floor" unique_id=642393683 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, 28.599754)
+
+[node name="Floor Stone403" parent="Set Dressing/Outside Floor" unique_id=1750492398 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, 32.599754)
+
+[node name="Floor Stone404" parent="Set Dressing/Outside Floor" unique_id=1516312426 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, 36.599754)
+
+[node name="Floor Stone405" parent="Set Dressing/Outside Floor" unique_id=426087637 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, 40.599754)
+
+[node name="Floor Stone406" parent="Set Dressing/Outside Floor" unique_id=2063185259 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, 44.599762)
+
+[node name="Floor Stone407" parent="Set Dressing/Outside Floor" unique_id=876210602 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -110.30003, 0, 48.599762)
+
+[node name="Floor Stone413" parent="Set Dressing/Outside Floor" unique_id=1993067945 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -75.400246)
+
+[node name="Floor Stone414" parent="Set Dressing/Outside Floor" unique_id=1848067166 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -71.400246)
+
+[node name="Floor Stone415" parent="Set Dressing/Outside Floor" unique_id=1380086393 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -67.400246)
+
+[node name="Floor Stone416" parent="Set Dressing/Outside Floor" unique_id=123750731 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -63.400246)
+
+[node name="Floor Stone417" parent="Set Dressing/Outside Floor" unique_id=608411714 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -59.400246)
+
+[node name="Floor Stone418" parent="Set Dressing/Outside Floor" unique_id=1427200357 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -55.400246)
+
+[node name="Floor Stone419" parent="Set Dressing/Outside Floor" unique_id=615403316 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -51.400246)
+
+[node name="Floor Stone420" parent="Set Dressing/Outside Floor" unique_id=2096478053 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -47.400246)
+
+[node name="Floor Stone421" parent="Set Dressing/Outside Floor" unique_id=44670461 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -43.400246)
+
+[node name="Floor Stone422" parent="Set Dressing/Outside Floor" unique_id=76572328 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -39.400246)
+
+[node name="Floor Stone423" parent="Set Dressing/Outside Floor" unique_id=668798016 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -35.400246)
+
+[node name="Floor Stone424" parent="Set Dressing/Outside Floor" unique_id=53368523 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -31.400246)
+
+[node name="Floor Stone425" parent="Set Dressing/Outside Floor" unique_id=1463782430 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -27.400246)
+
+[node name="Floor Stone426" parent="Set Dressing/Outside Floor" unique_id=164233129 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -23.400246)
+
+[node name="Floor Stone427" parent="Set Dressing/Outside Floor" unique_id=851264487 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -19.400246)
+
+[node name="Floor Stone428" parent="Set Dressing/Outside Floor" unique_id=237323423 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -15.400246)
+
+[node name="Floor Stone429" parent="Set Dressing/Outside Floor" unique_id=324853318 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -11.400246)
+
+[node name="Floor Stone430" parent="Set Dressing/Outside Floor" unique_id=1775772961 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -7.4002457)
+
+[node name="Floor Stone431" parent="Set Dressing/Outside Floor" unique_id=793390108 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, -3.4002457)
+
+[node name="Floor Stone432" parent="Set Dressing/Outside Floor" unique_id=1329406575 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, 0.59975433)
+
+[node name="Floor Stone433" parent="Set Dressing/Outside Floor" unique_id=512289606 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, 4.5997543)
+
+[node name="Floor Stone434" parent="Set Dressing/Outside Floor" unique_id=572066303 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, 8.599754)
+
+[node name="Floor Stone435" parent="Set Dressing/Outside Floor" unique_id=159930410 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, 12.599754)
+
+[node name="Floor Stone436" parent="Set Dressing/Outside Floor" unique_id=424621145 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, 16.599754)
+
+[node name="Floor Stone437" parent="Set Dressing/Outside Floor" unique_id=894955327 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, 20.599754)
+
+[node name="Floor Stone438" parent="Set Dressing/Outside Floor" unique_id=215128004 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, 24.599754)
+
+[node name="Floor Stone439" parent="Set Dressing/Outside Floor" unique_id=892268991 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, 28.599754)
+
+[node name="Floor Stone440" parent="Set Dressing/Outside Floor" unique_id=503478808 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, 32.599754)
+
+[node name="Floor Stone441" parent="Set Dressing/Outside Floor" unique_id=1701772253 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, 36.599754)
+
+[node name="Floor Stone442" parent="Set Dressing/Outside Floor" unique_id=1625358731 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, 40.599754)
+
+[node name="Floor Stone443" parent="Set Dressing/Outside Floor" unique_id=1100779365 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, 44.599762)
+
+[node name="Floor Stone444" parent="Set Dressing/Outside Floor" unique_id=892696853 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -106.30003, 0, 48.599762)
+
+[node name="Floor Stone371" parent="Set Dressing/Outside Floor" unique_id=581774805 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.29988, 0, -55.400124)
+
+[node name="Floor Stone372" parent="Set Dressing/Outside Floor" unique_id=1593601647 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.29988, 0, -55.400124)
+
+[node name="Floor Stone373" parent="Set Dressing/Outside Floor" unique_id=1647210559 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.29988, 0, -55.400124)
+
+[node name="Floor Stone374" parent="Set Dressing/Outside Floor" unique_id=17757212 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.29988, 0, -55.400124)
+
+[node name="Floor Stone375" parent="Set Dressing/Outside Floor" unique_id=286260175 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.29988, 0, -55.400124)
+
+[node name="Floor Stone408" parent="Set Dressing/Outside Floor" unique_id=644542656 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.29988, 0, -55.400124)
+
+[node name="Floor Stone409" parent="Set Dressing/Outside Floor" unique_id=1381965963 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.29988, 0, -55.400124)
+
+[node name="Floor Stone410" parent="Set Dressing/Outside Floor" unique_id=1531525207 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.29988, 0, -55.400124)
+
+[node name="Floor Stone411" parent="Set Dressing/Outside Floor" unique_id=149934505 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.29988, 0, -55.400124)
+
+[node name="Floor Stone412" parent="Set Dressing/Outside Floor" unique_id=1515502128 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.29988, 0, -55.400124)
+
+[node name="Floor Stone445" parent="Set Dressing/Outside Floor" unique_id=1749384608 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.29988, 0, -55.400124)
+
+[node name="Floor Stone446" parent="Set Dressing/Outside Floor" unique_id=664557603 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.29988, 0, -55.400124)
+
+[node name="Floor Stone447" parent="Set Dressing/Outside Floor" unique_id=2095288240 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.29988, 0, -55.40013)
+
+[node name="Floor Stone448" parent="Set Dressing/Outside Floor" unique_id=562607420 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.29988, 0, -55.40013)
+
+[node name="Floor Stone449" parent="Set Dressing/Outside Floor" unique_id=1593480433 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.29988, 0, -55.40013)
+
+[node name="Floor Stone450" parent="Set Dressing/Outside Floor" unique_id=434884716 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.299873, 0, -55.40013)
+
+[node name="Floor Stone451" parent="Set Dressing/Outside Floor" unique_id=2049585804 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.299873, 0, -55.40013)
+
+[node name="Floor Stone452" parent="Set Dressing/Outside Floor" unique_id=1430202666 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.29988, 0, -55.40013)
+
+[node name="Floor Stone453" parent="Set Dressing/Outside Floor" unique_id=1468905680 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.299881, 0, -55.40013)
+
+[node name="Floor Stone454" parent="Set Dressing/Outside Floor" unique_id=1817919626 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.299881, 0, -55.40013)
+
+[node name="Floor Stone455" parent="Set Dressing/Outside Floor" unique_id=1513716651 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.299881, 0, -55.40013)
+
+[node name="Floor Stone456" parent="Set Dressing/Outside Floor" unique_id=1896291239 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.299881, 0, -55.40013)
+
+[node name="Floor Stone457" parent="Set Dressing/Outside Floor" unique_id=87409126 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.299881, 0, -55.40013)
+
+[node name="Floor Stone458" parent="Set Dressing/Outside Floor" unique_id=1547953632 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.299881, 0, -55.40013)
+
+[node name="Floor Stone459" parent="Set Dressing/Outside Floor" unique_id=1541493154 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.299881, 0, -55.40013)
+
+[node name="Floor Stone460" parent="Set Dressing/Outside Floor" unique_id=1435196412 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.299881, 0, -55.40013)
+
+[node name="Floor Stone461" parent="Set Dressing/Outside Floor" unique_id=765584678 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.700119, 0, -55.40013)
+
+[node name="Floor Stone462" parent="Set Dressing/Outside Floor" unique_id=1042931413 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.700119, 0, -55.40013)
+
+[node name="Floor Stone463" parent="Set Dressing/Outside Floor" unique_id=486318827 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.700123, 0, -55.40013)
+
+[node name="Floor Stone464" parent="Set Dressing/Outside Floor" unique_id=1702631579 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.700123, 0, -55.40013)
+
+[node name="Floor Stone467" parent="Set Dressing/Outside Floor" unique_id=1570163934 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.29988, 0, -59.400124)
+
+[node name="Floor Stone468" parent="Set Dressing/Outside Floor" unique_id=17802731 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.29988, 0, -59.400124)
+
+[node name="Floor Stone469" parent="Set Dressing/Outside Floor" unique_id=1576895099 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.29988, 0, -59.400124)
+
+[node name="Floor Stone470" parent="Set Dressing/Outside Floor" unique_id=1325805048 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.29988, 0, -59.400124)
+
+[node name="Floor Stone471" parent="Set Dressing/Outside Floor" unique_id=426113084 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.29988, 0, -59.400124)
+
+[node name="Floor Stone472" parent="Set Dressing/Outside Floor" unique_id=253337428 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.29988, 0, -59.400124)
+
+[node name="Floor Stone473" parent="Set Dressing/Outside Floor" unique_id=848301311 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.29988, 0, -59.400124)
+
+[node name="Floor Stone474" parent="Set Dressing/Outside Floor" unique_id=1115709388 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.29988, 0, -59.400124)
+
+[node name="Floor Stone475" parent="Set Dressing/Outside Floor" unique_id=1357569106 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.29988, 0, -59.400124)
+
+[node name="Floor Stone476" parent="Set Dressing/Outside Floor" unique_id=1993798708 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.29988, 0, -59.400124)
+
+[node name="Floor Stone477" parent="Set Dressing/Outside Floor" unique_id=1639817531 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.29988, 0, -59.400124)
+
+[node name="Floor Stone478" parent="Set Dressing/Outside Floor" unique_id=331294408 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.29988, 0, -59.400124)
+
+[node name="Floor Stone479" parent="Set Dressing/Outside Floor" unique_id=1969486579 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.29988, 0, -59.400124)
+
+[node name="Floor Stone480" parent="Set Dressing/Outside Floor" unique_id=1596968802 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.29988, 0, -59.40013)
+
+[node name="Floor Stone481" parent="Set Dressing/Outside Floor" unique_id=774576001 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.29988, 0, -59.40013)
+
+[node name="Floor Stone482" parent="Set Dressing/Outside Floor" unique_id=296989039 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.29988, 0, -59.40013)
+
+[node name="Floor Stone483" parent="Set Dressing/Outside Floor" unique_id=1085222284 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.29988, 0, -59.40013)
+
+[node name="Floor Stone484" parent="Set Dressing/Outside Floor" unique_id=2134651499 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.29988, 0, -59.40013)
+
+[node name="Floor Stone485" parent="Set Dressing/Outside Floor" unique_id=1813215536 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.299881, 0, -59.40013)
+
+[node name="Floor Stone486" parent="Set Dressing/Outside Floor" unique_id=1573558094 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.299881, 0, -59.40013)
+
+[node name="Floor Stone487" parent="Set Dressing/Outside Floor" unique_id=860649541 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.299881, 0, -59.40013)
+
+[node name="Floor Stone488" parent="Set Dressing/Outside Floor" unique_id=525216135 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.299881, 0, -59.40013)
+
+[node name="Floor Stone489" parent="Set Dressing/Outside Floor" unique_id=337026641 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.299881, 0, -59.40013)
+
+[node name="Floor Stone490" parent="Set Dressing/Outside Floor" unique_id=806722193 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.299881, 0, -59.40013)
+
+[node name="Floor Stone491" parent="Set Dressing/Outside Floor" unique_id=232959618 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.299881, 0, -59.40013)
+
+[node name="Floor Stone492" parent="Set Dressing/Outside Floor" unique_id=869305596 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.299881, 0, -59.40013)
+
+[node name="Floor Stone493" parent="Set Dressing/Outside Floor" unique_id=61415146 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.700119, 0, -59.40013)
+
+[node name="Floor Stone494" parent="Set Dressing/Outside Floor" unique_id=1541955388 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.700119, 0, -59.40013)
+
+[node name="Floor Stone495" parent="Set Dressing/Outside Floor" unique_id=814389947 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.700123, 0, -59.40013)
+
+[node name="Floor Stone496" parent="Set Dressing/Outside Floor" unique_id=101655650 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.700123, 0, -59.40013)
+
+[node name="Floor Stone499" parent="Set Dressing/Outside Floor" unique_id=63706734 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.29988, 0, -63.400124)
+
+[node name="Floor Stone500" parent="Set Dressing/Outside Floor" unique_id=1725353187 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.29988, 0, -63.400124)
+
+[node name="Floor Stone501" parent="Set Dressing/Outside Floor" unique_id=1425186193 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.29988, 0, -63.400124)
+
+[node name="Floor Stone502" parent="Set Dressing/Outside Floor" unique_id=1638535070 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.29988, 0, -63.400124)
+
+[node name="Floor Stone503" parent="Set Dressing/Outside Floor" unique_id=1917608082 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.29988, 0, -63.400124)
+
+[node name="Floor Stone504" parent="Set Dressing/Outside Floor" unique_id=356537016 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.29988, 0, -63.400124)
+
+[node name="Floor Stone505" parent="Set Dressing/Outside Floor" unique_id=265858623 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.29988, 0, -63.400124)
+
+[node name="Floor Stone506" parent="Set Dressing/Outside Floor" unique_id=520690024 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.29988, 0, -63.400124)
+
+[node name="Floor Stone507" parent="Set Dressing/Outside Floor" unique_id=252383371 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.29988, 0, -63.400124)
+
+[node name="Floor Stone508" parent="Set Dressing/Outside Floor" unique_id=1858750732 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.29988, 0, -63.400124)
+
+[node name="Floor Stone509" parent="Set Dressing/Outside Floor" unique_id=81028791 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.29988, 0, -63.40013)
+
+[node name="Floor Stone510" parent="Set Dressing/Outside Floor" unique_id=487473042 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.29988, 0, -63.40013)
+
+[node name="Floor Stone511" parent="Set Dressing/Outside Floor" unique_id=190726976 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.29988, 0, -63.40013)
+
+[node name="Floor Stone512" parent="Set Dressing/Outside Floor" unique_id=20431468 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.29988, 0, -63.40013)
+
+[node name="Floor Stone513" parent="Set Dressing/Outside Floor" unique_id=27835243 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.29988, 0, -63.40013)
+
+[node name="Floor Stone514" parent="Set Dressing/Outside Floor" unique_id=155285103 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.29988, 0, -63.40013)
+
+[node name="Floor Stone515" parent="Set Dressing/Outside Floor" unique_id=124102571 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.29988, 0, -63.40013)
+
+[node name="Floor Stone516" parent="Set Dressing/Outside Floor" unique_id=1811377465 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.29988, 0, -63.40013)
+
+[node name="Floor Stone517" parent="Set Dressing/Outside Floor" unique_id=1026182872 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.299881, 0, -63.40013)
+
+[node name="Floor Stone518" parent="Set Dressing/Outside Floor" unique_id=1323743601 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.299881, 0, -63.40013)
+
+[node name="Floor Stone519" parent="Set Dressing/Outside Floor" unique_id=546486423 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.299881, 0, -63.40013)
+
+[node name="Floor Stone520" parent="Set Dressing/Outside Floor" unique_id=2136693247 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.299881, 0, -63.40013)
+
+[node name="Floor Stone521" parent="Set Dressing/Outside Floor" unique_id=878120082 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.299881, 0, -63.40013)
+
+[node name="Floor Stone522" parent="Set Dressing/Outside Floor" unique_id=2108195493 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.299881, 0, -63.40013)
+
+[node name="Floor Stone523" parent="Set Dressing/Outside Floor" unique_id=387816938 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.299881, 0, -63.40013)
+
+[node name="Floor Stone524" parent="Set Dressing/Outside Floor" unique_id=1825313745 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.299881, 0, -63.40013)
+
+[node name="Floor Stone525" parent="Set Dressing/Outside Floor" unique_id=505070324 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.700119, 0, -63.40013)
+
+[node name="Floor Stone526" parent="Set Dressing/Outside Floor" unique_id=406649650 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.700119, 0, -63.40013)
+
+[node name="Floor Stone527" parent="Set Dressing/Outside Floor" unique_id=1808991846 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.700123, 0, -63.40013)
+
+[node name="Floor Stone528" parent="Set Dressing/Outside Floor" unique_id=369847258 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.700123, 0, -63.40013)
+
+[node name="Floor Stone531" parent="Set Dressing/Outside Floor" unique_id=1443042579 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.29988, 0, -67.40012)
+
+[node name="Floor Stone532" parent="Set Dressing/Outside Floor" unique_id=370812140 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.29988, 0, -67.40012)
+
+[node name="Floor Stone533" parent="Set Dressing/Outside Floor" unique_id=1476171550 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.29988, 0, -67.40012)
+
+[node name="Floor Stone534" parent="Set Dressing/Outside Floor" unique_id=205579702 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.29988, 0, -67.40012)
+
+[node name="Floor Stone535" parent="Set Dressing/Outside Floor" unique_id=1543354192 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.29988, 0, -67.40012)
+
+[node name="Floor Stone536" parent="Set Dressing/Outside Floor" unique_id=1228409426 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.29988, 0, -67.40012)
+
+[node name="Floor Stone537" parent="Set Dressing/Outside Floor" unique_id=873333322 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.29988, 0, -67.40012)
+
+[node name="Floor Stone538" parent="Set Dressing/Outside Floor" unique_id=1937261171 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.29988, 0, -67.40012)
+
+[node name="Floor Stone539" parent="Set Dressing/Outside Floor" unique_id=1430265580 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.29988, 0, -67.40012)
+
+[node name="Floor Stone540" parent="Set Dressing/Outside Floor" unique_id=909430085 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.29988, 0, -67.40012)
+
+[node name="Floor Stone541" parent="Set Dressing/Outside Floor" unique_id=256159018 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.29988, 0, -67.40012)
+
+[node name="Floor Stone542" parent="Set Dressing/Outside Floor" unique_id=1377216133 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.29988, 0, -67.40012)
+
+[node name="Floor Stone543" parent="Set Dressing/Outside Floor" unique_id=812621285 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.29988, 0, -67.40013)
+
+[node name="Floor Stone544" parent="Set Dressing/Outside Floor" unique_id=663234407 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.29988, 0, -67.40013)
+
+[node name="Floor Stone545" parent="Set Dressing/Outside Floor" unique_id=461974719 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.29988, 0, -67.40013)
+
+[node name="Floor Stone546" parent="Set Dressing/Outside Floor" unique_id=1203589608 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.299873, 0, -67.40013)
+
+[node name="Floor Stone547" parent="Set Dressing/Outside Floor" unique_id=353382586 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.299873, 0, -67.40013)
+
+[node name="Floor Stone548" parent="Set Dressing/Outside Floor" unique_id=1046857681 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.29988, 0, -67.40013)
+
+[node name="Floor Stone549" parent="Set Dressing/Outside Floor" unique_id=1084073036 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.299881, 0, -67.40013)
+
+[node name="Floor Stone550" parent="Set Dressing/Outside Floor" unique_id=666821762 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.299881, 0, -67.40013)
+
+[node name="Floor Stone551" parent="Set Dressing/Outside Floor" unique_id=1437213511 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.299881, 0, -67.40013)
+
+[node name="Floor Stone552" parent="Set Dressing/Outside Floor" unique_id=1067381765 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.299881, 0, -67.40013)
+
+[node name="Floor Stone553" parent="Set Dressing/Outside Floor" unique_id=615341541 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.299881, 0, -67.40013)
+
+[node name="Floor Stone554" parent="Set Dressing/Outside Floor" unique_id=931995646 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.299881, 0, -67.40013)
+
+[node name="Floor Stone555" parent="Set Dressing/Outside Floor" unique_id=2050850592 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.299881, 0, -67.40013)
+
+[node name="Floor Stone556" parent="Set Dressing/Outside Floor" unique_id=606267988 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.299881, 0, -67.40013)
+
+[node name="Floor Stone557" parent="Set Dressing/Outside Floor" unique_id=1689897793 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.700119, 0, -67.40013)
+
+[node name="Floor Stone558" parent="Set Dressing/Outside Floor" unique_id=201353260 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.700119, 0, -67.40013)
+
+[node name="Floor Stone559" parent="Set Dressing/Outside Floor" unique_id=1479338163 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.700123, 0, -67.40013)
+
+[node name="Floor Stone560" parent="Set Dressing/Outside Floor" unique_id=1500630639 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.700123, 0, -67.40013)
+
+[node name="Floor Stone563" parent="Set Dressing/Outside Floor" unique_id=59195712 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.29988, 0, -71.40012)
+
+[node name="Floor Stone564" parent="Set Dressing/Outside Floor" unique_id=939516569 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.29988, 0, -71.40012)
+
+[node name="Floor Stone565" parent="Set Dressing/Outside Floor" unique_id=825385487 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.29988, 0, -71.40012)
+
+[node name="Floor Stone566" parent="Set Dressing/Outside Floor" unique_id=2077739185 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.29988, 0, -71.40012)
+
+[node name="Floor Stone567" parent="Set Dressing/Outside Floor" unique_id=1472432781 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.29988, 0, -71.40012)
+
+[node name="Floor Stone568" parent="Set Dressing/Outside Floor" unique_id=1280456546 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.29988, 0, -71.40012)
+
+[node name="Floor Stone569" parent="Set Dressing/Outside Floor" unique_id=1181001480 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.29988, 0, -71.40012)
+
+[node name="Floor Stone570" parent="Set Dressing/Outside Floor" unique_id=600586757 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.29988, 0, -71.40012)
+
+[node name="Floor Stone571" parent="Set Dressing/Outside Floor" unique_id=1088380079 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.29988, 0, -71.40012)
+
+[node name="Floor Stone572" parent="Set Dressing/Outside Floor" unique_id=32059463 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.29988, 0, -71.40012)
+
+[node name="Floor Stone573" parent="Set Dressing/Outside Floor" unique_id=1692260732 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.29988, 0, -71.40012)
+
+[node name="Floor Stone574" parent="Set Dressing/Outside Floor" unique_id=1290441968 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.29988, 0, -71.40012)
+
+[node name="Floor Stone575" parent="Set Dressing/Outside Floor" unique_id=1739609911 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.29988, 0, -71.40012)
+
+[node name="Floor Stone576" parent="Set Dressing/Outside Floor" unique_id=813234862 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.29988, 0, -71.40013)
+
+[node name="Floor Stone577" parent="Set Dressing/Outside Floor" unique_id=952836437 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.29988, 0, -71.40013)
+
+[node name="Floor Stone578" parent="Set Dressing/Outside Floor" unique_id=1107405284 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.29988, 0, -71.40013)
+
+[node name="Floor Stone579" parent="Set Dressing/Outside Floor" unique_id=1529238986 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.29988, 0, -71.40013)
+
+[node name="Floor Stone580" parent="Set Dressing/Outside Floor" unique_id=306041661 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.29988, 0, -71.40013)
+
+[node name="Floor Stone581" parent="Set Dressing/Outside Floor" unique_id=2007796163 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.299881, 0, -71.40013)
+
+[node name="Floor Stone582" parent="Set Dressing/Outside Floor" unique_id=1055301332 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.299881, 0, -71.40013)
+
+[node name="Floor Stone583" parent="Set Dressing/Outside Floor" unique_id=141979544 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.299881, 0, -71.40013)
+
+[node name="Floor Stone584" parent="Set Dressing/Outside Floor" unique_id=320641038 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.299881, 0, -71.40013)
+
+[node name="Floor Stone585" parent="Set Dressing/Outside Floor" unique_id=1962908054 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.299881, 0, -71.40013)
+
+[node name="Floor Stone586" parent="Set Dressing/Outside Floor" unique_id=2102229882 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.299881, 0, -71.40013)
+
+[node name="Floor Stone587" parent="Set Dressing/Outside Floor" unique_id=850161880 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.299881, 0, -71.40013)
+
+[node name="Floor Stone588" parent="Set Dressing/Outside Floor" unique_id=1311939001 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.299881, 0, -71.40013)
+
+[node name="Floor Stone589" parent="Set Dressing/Outside Floor" unique_id=2008171288 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.700119, 0, -71.40013)
+
+[node name="Floor Stone590" parent="Set Dressing/Outside Floor" unique_id=627902862 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.700119, 0, -71.40013)
+
+[node name="Floor Stone591" parent="Set Dressing/Outside Floor" unique_id=393933255 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.700123, 0, -71.40013)
+
+[node name="Floor Stone592" parent="Set Dressing/Outside Floor" unique_id=1444155228 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.700123, 0, -71.40013)
+
+[node name="Floor Stone595" parent="Set Dressing/Outside Floor" unique_id=1013228882 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.29988, 0, -75.40012)
+
+[node name="Floor Stone596" parent="Set Dressing/Outside Floor" unique_id=343496374 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -98.29988, 0, -75.40012)
+
+[node name="Floor Stone597" parent="Set Dressing/Outside Floor" unique_id=476650873 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.29988, 0, -75.40012)
+
+[node name="Floor Stone598" parent="Set Dressing/Outside Floor" unique_id=1522979690 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.29988, 0, -75.40012)
+
+[node name="Floor Stone599" parent="Set Dressing/Outside Floor" unique_id=866294783 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.29988, 0, -75.40012)
+
+[node name="Floor Stone600" parent="Set Dressing/Outside Floor" unique_id=4020796 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.29988, 0, -75.40012)
+
+[node name="Floor Stone601" parent="Set Dressing/Outside Floor" unique_id=476650072 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.29988, 0, -75.40012)
+
+[node name="Floor Stone602" parent="Set Dressing/Outside Floor" unique_id=2127644803 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.29988, 0, -75.40012)
+
+[node name="Floor Stone603" parent="Set Dressing/Outside Floor" unique_id=1352665175 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.29988, 0, -75.40012)
+
+[node name="Floor Stone604" parent="Set Dressing/Outside Floor" unique_id=15041732 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.29988, 0, -75.40012)
+
+[node name="Floor Stone605" parent="Set Dressing/Outside Floor" unique_id=118730043 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.29988, 0, -75.40013)
+
+[node name="Floor Stone606" parent="Set Dressing/Outside Floor" unique_id=824265774 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.29988, 0, -75.40013)
+
+[node name="Floor Stone607" parent="Set Dressing/Outside Floor" unique_id=1053714459 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.29988, 0, -75.40013)
+
+[node name="Floor Stone608" parent="Set Dressing/Outside Floor" unique_id=2087110528 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.29988, 0, -75.40013)
+
+[node name="Floor Stone609" parent="Set Dressing/Outside Floor" unique_id=1378618131 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.29988, 0, -75.40013)
+
+[node name="Floor Stone610" parent="Set Dressing/Outside Floor" unique_id=737996240 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.29988, 0, -75.40013)
+
+[node name="Floor Stone611" parent="Set Dressing/Outside Floor" unique_id=1588930165 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.29988, 0, -75.40013)
+
+[node name="Floor Stone612" parent="Set Dressing/Outside Floor" unique_id=1876611333 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.29988, 0, -75.40013)
+
+[node name="Floor Stone613" parent="Set Dressing/Outside Floor" unique_id=1975492943 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.299881, 0, -75.40013)
+
+[node name="Floor Stone614" parent="Set Dressing/Outside Floor" unique_id=403397002 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.299881, 0, -75.40013)
+
+[node name="Floor Stone615" parent="Set Dressing/Outside Floor" unique_id=220177854 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.299881, 0, -75.40013)
+
+[node name="Floor Stone616" parent="Set Dressing/Outside Floor" unique_id=1980739796 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.299881, 0, -75.40013)
+
+[node name="Floor Stone617" parent="Set Dressing/Outside Floor" unique_id=1475604869 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.299881, 0, -75.40013)
+
+[node name="Floor Stone618" parent="Set Dressing/Outside Floor" unique_id=743490340 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.299881, 0, -75.40013)
+
+[node name="Floor Stone619" parent="Set Dressing/Outside Floor" unique_id=244181831 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.299881, 0, -75.40013)
+
+[node name="Floor Stone620" parent="Set Dressing/Outside Floor" unique_id=460600479 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.299881, 0, -75.40013)
+
+[node name="Floor Stone621" parent="Set Dressing/Outside Floor" unique_id=1486812653 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.700119, 0, -75.40013)
+
+[node name="Floor Stone622" parent="Set Dressing/Outside Floor" unique_id=399442319 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.700119, 0, -75.40013)
+
+[node name="Floor Stone623" parent="Set Dressing/Outside Floor" unique_id=1831694298 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.700123, 0, -75.40013)
+
+[node name="Floor Stone624" parent="Set Dressing/Outside Floor" unique_id=1066236228 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.700123, 0, -75.40013)
+
+[node name="Floor Stone627" parent="Set Dressing/Outside Floor" unique_id=1900970996 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700161, 0, -75.40019)
+
+[node name="Floor Stone628" parent="Set Dressing/Outside Floor" unique_id=1849210448 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700161, 0, -71.40019)
+
+[node name="Floor Stone629" parent="Set Dressing/Outside Floor" unique_id=764372521 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700157, 0, -67.40019)
+
+[node name="Floor Stone630" parent="Set Dressing/Outside Floor" unique_id=409416542 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700157, 0, -63.400192)
+
+[node name="Floor Stone631" parent="Set Dressing/Outside Floor" unique_id=2043185158 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700157, 0, -59.400192)
+
+[node name="Floor Stone632" parent="Set Dressing/Outside Floor" unique_id=1083424960 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700157, 0, -55.400192)
+
+[node name="Floor Stone633" parent="Set Dressing/Outside Floor" unique_id=1164883127 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700157, 0, -51.400192)
+
+[node name="Floor Stone634" parent="Set Dressing/Outside Floor" unique_id=1039419478 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700157, 0, -47.400192)
+
+[node name="Floor Stone635" parent="Set Dressing/Outside Floor" unique_id=928930652 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700157, 0, -43.400192)
+
+[node name="Floor Stone636" parent="Set Dressing/Outside Floor" unique_id=1550990020 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700157, 0, -39.400192)
+
+[node name="Floor Stone637" parent="Set Dressing/Outside Floor" unique_id=1434980256 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700157, 0, -35.400192)
+
+[node name="Floor Stone638" parent="Set Dressing/Outside Floor" unique_id=753453121 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700157, 0, -31.400192)
+
+[node name="Floor Stone639" parent="Set Dressing/Outside Floor" unique_id=154195305 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, -27.400192)
+
+[node name="Floor Stone640" parent="Set Dressing/Outside Floor" unique_id=1895807984 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, -23.400192)
+
+[node name="Floor Stone641" parent="Set Dressing/Outside Floor" unique_id=1041433193 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, -19.400192)
+
+[node name="Floor Stone642" parent="Set Dressing/Outside Floor" unique_id=1227781253 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, -15.400185)
+
+[node name="Floor Stone643" parent="Set Dressing/Outside Floor" unique_id=1677603842 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, -11.400185)
+
+[node name="Floor Stone644" parent="Set Dressing/Outside Floor" unique_id=744493208 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, -7.4001923)
+
+[node name="Floor Stone645" parent="Set Dressing/Outside Floor" unique_id=666411833 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, -3.4001923)
+
+[node name="Floor Stone646" parent="Set Dressing/Outside Floor" unique_id=93449581 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, 0.59980774)
+
+[node name="Floor Stone647" parent="Set Dressing/Outside Floor" unique_id=843362293 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, 4.5998077)
+
+[node name="Floor Stone648" parent="Set Dressing/Outside Floor" unique_id=506557936 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, 8.599808)
+
+[node name="Floor Stone649" parent="Set Dressing/Outside Floor" unique_id=746145042 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, 12.599808)
+
+[node name="Floor Stone650" parent="Set Dressing/Outside Floor" unique_id=1276824831 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, 16.599808)
+
+[node name="Floor Stone651" parent="Set Dressing/Outside Floor" unique_id=1336570896 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, 20.599808)
+
+[node name="Floor Stone652" parent="Set Dressing/Outside Floor" unique_id=409230889 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, 24.599808)
+
+[node name="Floor Stone653" parent="Set Dressing/Outside Floor" unique_id=1233042610 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, 28.599808)
+
+[node name="Floor Stone654" parent="Set Dressing/Outside Floor" unique_id=1049791905 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, 32.599808)
+
+[node name="Floor Stone655" parent="Set Dressing/Outside Floor" unique_id=584590141 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, 36.59981)
+
+[node name="Floor Stone656" parent="Set Dressing/Outside Floor" unique_id=607765821 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700165, 0, 40.59981)
+
+[node name="Floor Stone657" parent="Set Dressing/Outside Floor" unique_id=438163832 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700161, 0, 44.59982)
+
+[node name="Floor Stone658" parent="Set Dressing/Outside Floor" unique_id=347968789 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 21.700161, 0, 48.59982)
+
+[node name="Floor Stone659" parent="Set Dressing/Outside Floor" unique_id=1768282487 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700161, 0, -75.40019)
+
+[node name="Floor Stone660" parent="Set Dressing/Outside Floor" unique_id=842110916 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700161, 0, -71.40019)
+
+[node name="Floor Stone661" parent="Set Dressing/Outside Floor" unique_id=614693998 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700161, 0, -67.40019)
+
+[node name="Floor Stone662" parent="Set Dressing/Outside Floor" unique_id=63689133 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700161, 0, -63.400192)
+
+[node name="Floor Stone663" parent="Set Dressing/Outside Floor" unique_id=160422618 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700157, 0, -59.400192)
+
+[node name="Floor Stone664" parent="Set Dressing/Outside Floor" unique_id=1460315362 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700157, 0, -55.400192)
+
+[node name="Floor Stone665" parent="Set Dressing/Outside Floor" unique_id=1294888685 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700157, 0, -51.400192)
+
+[node name="Floor Stone666" parent="Set Dressing/Outside Floor" unique_id=154439393 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700157, 0, -47.400192)
+
+[node name="Floor Stone667" parent="Set Dressing/Outside Floor" unique_id=1748779690 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700157, 0, -43.400192)
+
+[node name="Floor Stone668" parent="Set Dressing/Outside Floor" unique_id=1655700478 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700157, 0, -39.400192)
+
+[node name="Floor Stone669" parent="Set Dressing/Outside Floor" unique_id=1112771685 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700157, 0, -35.400192)
+
+[node name="Floor Stone670" parent="Set Dressing/Outside Floor" unique_id=1686856711 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700157, 0, -31.400192)
+
+[node name="Floor Stone671" parent="Set Dressing/Outside Floor" unique_id=2100290702 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700157, 0, -27.400192)
+
+[node name="Floor Stone672" parent="Set Dressing/Outside Floor" unique_id=2139486978 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, -23.400192)
+
+[node name="Floor Stone673" parent="Set Dressing/Outside Floor" unique_id=629592647 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, -19.400192)
+
+[node name="Floor Stone674" parent="Set Dressing/Outside Floor" unique_id=2037066454 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, -15.400192)
+
+[node name="Floor Stone675" parent="Set Dressing/Outside Floor" unique_id=2069208434 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, -11.400192)
+
+[node name="Floor Stone676" parent="Set Dressing/Outside Floor" unique_id=1660486273 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, -7.4001923)
+
+[node name="Floor Stone677" parent="Set Dressing/Outside Floor" unique_id=416107934 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, -3.4001923)
+
+[node name="Floor Stone678" parent="Set Dressing/Outside Floor" unique_id=1936367414 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, 0.59980774)
+
+[node name="Floor Stone679" parent="Set Dressing/Outside Floor" unique_id=1986833946 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, 4.5998077)
+
+[node name="Floor Stone680" parent="Set Dressing/Outside Floor" unique_id=1330331083 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, 8.599808)
+
+[node name="Floor Stone681" parent="Set Dressing/Outside Floor" unique_id=384955364 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, 12.599808)
+
+[node name="Floor Stone682" parent="Set Dressing/Outside Floor" unique_id=2033440172 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, 16.599808)
+
+[node name="Floor Stone683" parent="Set Dressing/Outside Floor" unique_id=648986424 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, 20.599808)
+
+[node name="Floor Stone684" parent="Set Dressing/Outside Floor" unique_id=1240443724 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, 24.599808)
+
+[node name="Floor Stone685" parent="Set Dressing/Outside Floor" unique_id=1617602203 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, 28.599808)
+
+[node name="Floor Stone686" parent="Set Dressing/Outside Floor" unique_id=49430520 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700165, 0, 32.599808)
+
+[node name="Floor Stone687" parent="Set Dressing/Outside Floor" unique_id=663266329 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700161, 0, 36.59981)
+
+[node name="Floor Stone688" parent="Set Dressing/Outside Floor" unique_id=1191319091 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700161, 0, 40.59981)
+
+[node name="Floor Stone689" parent="Set Dressing/Outside Floor" unique_id=530772097 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700161, 0, 44.59982)
+
+[node name="Floor Stone690" parent="Set Dressing/Outside Floor" unique_id=1392281814 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 25.700161, 0, 48.59982)
+
+[node name="Floor Stone691" parent="Set Dressing/Outside Floor" unique_id=752618859 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700161, 0, -75.40019)
+
+[node name="Floor Stone692" parent="Set Dressing/Outside Floor" unique_id=770060685 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700161, 0, -71.40019)
+
+[node name="Floor Stone693" parent="Set Dressing/Outside Floor" unique_id=1436316167 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700161, 0, -67.40019)
+
+[node name="Floor Stone694" parent="Set Dressing/Outside Floor" unique_id=1237526582 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700161, 0, -63.400192)
+
+[node name="Floor Stone695" parent="Set Dressing/Outside Floor" unique_id=663388793 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700157, 0, -59.400192)
+
+[node name="Floor Stone696" parent="Set Dressing/Outside Floor" unique_id=806914050 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700157, 0, -55.400192)
+
+[node name="Floor Stone697" parent="Set Dressing/Outside Floor" unique_id=1336314154 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700157, 0, -51.400192)
+
+[node name="Floor Stone698" parent="Set Dressing/Outside Floor" unique_id=1205694655 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700157, 0, -47.400192)
+
+[node name="Floor Stone699" parent="Set Dressing/Outside Floor" unique_id=2088489297 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700157, 0, -43.400192)
+
+[node name="Floor Stone700" parent="Set Dressing/Outside Floor" unique_id=1723785805 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700157, 0, -39.400192)
+
+[node name="Floor Stone701" parent="Set Dressing/Outside Floor" unique_id=1878518112 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, -35.400192)
+
+[node name="Floor Stone702" parent="Set Dressing/Outside Floor" unique_id=1884082362 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, -31.400192)
+
+[node name="Floor Stone703" parent="Set Dressing/Outside Floor" unique_id=1122118068 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, -27.400192)
+
+[node name="Floor Stone704" parent="Set Dressing/Outside Floor" unique_id=1904979031 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, -23.400192)
+
+[node name="Floor Stone705" parent="Set Dressing/Outside Floor" unique_id=1513641635 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, -19.400192)
+
+[node name="Floor Stone706" parent="Set Dressing/Outside Floor" unique_id=1300674934 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, -15.400192)
+
+[node name="Floor Stone707" parent="Set Dressing/Outside Floor" unique_id=1184545654 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, -11.400192)
+
+[node name="Floor Stone708" parent="Set Dressing/Outside Floor" unique_id=1151704693 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, -7.4001923)
+
+[node name="Floor Stone709" parent="Set Dressing/Outside Floor" unique_id=1781134206 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, -3.4001923)
+
+[node name="Floor Stone710" parent="Set Dressing/Outside Floor" unique_id=808485777 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, 0.59980774)
+
+[node name="Floor Stone711" parent="Set Dressing/Outside Floor" unique_id=853713020 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, 4.5998077)
+
+[node name="Floor Stone712" parent="Set Dressing/Outside Floor" unique_id=999561800 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, 8.599808)
+
+[node name="Floor Stone713" parent="Set Dressing/Outside Floor" unique_id=2107878745 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, 12.599808)
+
+[node name="Floor Stone714" parent="Set Dressing/Outside Floor" unique_id=1499240994 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, 16.599808)
+
+[node name="Floor Stone715" parent="Set Dressing/Outside Floor" unique_id=1828108816 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, 20.599808)
+
+[node name="Floor Stone716" parent="Set Dressing/Outside Floor" unique_id=1832939288 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, 24.599808)
+
+[node name="Floor Stone717" parent="Set Dressing/Outside Floor" unique_id=1377150666 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, 28.599808)
+
+[node name="Floor Stone718" parent="Set Dressing/Outside Floor" unique_id=1870897266 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700165, 0, 32.599808)
+
+[node name="Floor Stone719" parent="Set Dressing/Outside Floor" unique_id=2033785727 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700161, 0, 36.59981)
+
+[node name="Floor Stone720" parent="Set Dressing/Outside Floor" unique_id=833429372 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700161, 0, 40.59981)
+
+[node name="Floor Stone721" parent="Set Dressing/Outside Floor" unique_id=1674180076 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700161, 0, 44.59982)
+
+[node name="Floor Stone722" parent="Set Dressing/Outside Floor" unique_id=967119980 instance=ExtResource("2_2djvx")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 29.700161, 0, 48.59982)
+
+[node name="Floor Stone465" parent="Set Dressing/Outside Floor" unique_id=137227919 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.700123, 0, -55.40013)
+
+[node name="Floor Stone497" parent="Set Dressing/Outside Floor" unique_id=754213218 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.700123, 0, -59.40013)
+
+[node name="Floor Stone529" parent="Set Dressing/Outside Floor" unique_id=1417400107 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.700123, 0, -63.40013)
+
+[node name="Floor Stone561" parent="Set Dressing/Outside Floor" unique_id=793871603 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.700123, 0, -67.40013)
+
+[node name="Floor Stone593" parent="Set Dressing/Outside Floor" unique_id=427296607 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.700123, 0, -71.40013)
+
+[node name="Floor Stone625" parent="Set Dressing/Outside Floor" unique_id=1417434062 instance=ExtResource("2_2djvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.700123, 0, -75.40013)
+
+[node name="Wall" parent="Set Dressing" unique_id=80725361 instance=ExtResource("3_uvc87")]
+transform = Transform3D(3.2, 0, 0, 0, 4.1000004, 0, 0, 0, 1, -95, 0, 50.9)
+
+[node name="Wall2" parent="Set Dressing" unique_id=1030558731 instance=ExtResource("3_uvc87")]
+transform = Transform3D(3.2, 0, 0, 0, 4.1000004, 0, 0, 0, 1, -82.2, 0, 50.9)
+
+[node name="Wall3" parent="Set Dressing" unique_id=638484007 instance=ExtResource("3_uvc87")]
+transform = Transform3D(3.2, 0, 0, 0, 4.1000004, 0, 0, 0, 1, -69.399994, 0, 50.9)
+
+[node name="Wall4" parent="Set Dressing" unique_id=972559394 instance=ExtResource("3_uvc87")]
+transform = Transform3D(3.2, 0, 0, 0, 4.1000004, 0, 0, 0, 1, -56.599995, 0, 50.9)
