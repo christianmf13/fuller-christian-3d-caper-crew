@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://g04aatw0ecct"]
+
+[ext_resource type="PackedScene" uid="uid://jgcdl8x25tkb" path="res://assets/Wall Cropped Middle.blend" id="1_38dma"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1a3x8"]
+size = Vector3(4, 2.7, 1)
+
+[node name="Wall Cropped Middle" type="StaticBody3D" unique_id=1600366178]
+
+[node name="Wall Cropped Middle" parent="." unique_id=360354814 instance=ExtResource("1_38dma")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=349390562]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16376954, 1.3526365, 0)
+shape = SubResource("BoxShape3D_1a3x8")

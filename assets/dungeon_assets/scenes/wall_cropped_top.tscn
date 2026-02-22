@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b8ov8uopxesx6"]
+
+[ext_resource type="PackedScene" uid="uid://crh07acmm72fh" path="res://assets/Wall Cropped Top.blend" id="1_42q85"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l6iem"]
+size = Vector3(4, 3.5107422, 0.65964353)
+
+[node name="Wall Cropped Top" type="StaticBody3D" unique_id=1135447117]
+
+[node name="Wall Cropped Top" parent="." unique_id=1389672555 instance=ExtResource("1_42q85")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=16060268]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19999999, 1.7553712, 0.0023803115)
+shape = SubResource("BoxShape3D_l6iem")
