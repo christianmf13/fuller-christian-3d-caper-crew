@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://v5bynsyeyjqr"]
+
+[ext_resource type="PackedScene" uid="uid://c8u7eusfqdrrc" path="res://assets/dungeon_assets/building/wall_half_endcap.glb" id="1_on04d"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h4wgq"]
+size = Vector3(2.7, 1.7, 0.6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cy6au"]
+size = Vector3(0.5005859, 2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gx6fv"]
+size = Vector3(0.8, 2, 1)
+
+[node name="One Step" type="StaticBody3D" unique_id=1800269742]
+
+[node name="wall_half_endcap2" parent="." unique_id=406087140 instance=ExtResource("1_on04d")]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 1, 2, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1542064412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.85, 0.85, 0)
+shape = SubResource("BoxShape3D_h4wgq")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=214004759]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7550292, 1, 0)
+shape = SubResource("BoxShape3D_cy6au")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=1553702974]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6, 1, 0)
+shape = SubResource("BoxShape3D_gx6fv")
