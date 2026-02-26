@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://qn15y86es7t4"
-path="res://.godot/imported/Wall Cropped.blend-eb0f7457cee8be0e53e71be41866502f.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/Wall Cropped.blend"
-dest_files=["res://.godot/imported/Wall Cropped.blend-eb0f7457cee8be0e53e71be41866502f.scn"]
 
 [params]
 
