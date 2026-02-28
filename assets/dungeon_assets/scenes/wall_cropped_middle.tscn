@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://g04aatw0ecct"]
 
-[ext_resource type="PackedScene" uid="uid://jgcdl8x25tkb" path="res://assets/Wall Cropped Middle.blend" id="1_38dma"]
+[ext_resource type="PackedScene" uid="uid://cm1tfkc7c1y6s" path="res://assets/dungeon_assets/custom/Wall Cropped Middle.glb" id="1_38dma"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1a3x8"]
 size = Vector3(4, 2.7, 1)

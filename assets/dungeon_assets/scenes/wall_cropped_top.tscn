@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b8ov8uopxesx6"]
 
-[ext_resource type="PackedScene" uid="uid://crh07acmm72fh" path="res://assets/Wall Cropped Top.blend" id="1_42q85"]
+[ext_resource type="PackedScene" uid="uid://01854x3infbc" path="res://assets/dungeon_assets/custom/Wall Cropped Top.glb" id="1_42q85"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_l6iem"]
 size = Vector3(4, 3.5107422, 0.65964353)
