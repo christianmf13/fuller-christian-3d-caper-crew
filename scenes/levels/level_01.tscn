@@ -29,6 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://bqpfdau8cyud7" path="res://assets/dungeon_assets/scenes/keg_decorated.tscn" id="27_stkom"]
 [ext_resource type="PackedScene" uid="uid://dp1fj842gh314" path="res://assets/dungeon_assets/scenes/table_small.tscn" id="28_5t8rk"]
 [ext_resource type="PackedScene" uid="uid://csiqf8ho1tdqa" path="res://assets/dungeon_assets/props/keyring.glb" id="29_cag23"]
+[ext_resource type="PackedScene" uid="uid://c7hrkhj7d7ia3" path="res://assets/dungeon_assets/scenes/bookshelf.tscn" id="30_e5bmj"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_cwffn"]
 
@@ -17460,3 +17461,93 @@ transform = Transform3D(1, 0, 0, 0, -1, 8.742278e-08, 0, -8.742278e-08, -1, 7.21
 
 [node name="keyring2" parent="Set Dressing/Props" unique_id=1964799449 instance=ExtResource("29_cag23")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 3, -32)
+
+[node name="Bookshelf" parent="." unique_id=349039732 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 0, 17.590012)
+
+[node name="Bookshelf2" parent="." unique_id=748609492 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 2, 17.590012)
+
+[node name="Bookshelf3" parent="." unique_id=1030899929 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 4, 17.590012)
+
+[node name="Bookshelf4" parent="." unique_id=152984537 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 6, 17.590012)
+
+[node name="Bookshelf5" parent="." unique_id=581277071 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 8, 17.590012)
+
+[node name="Bookshelf6" parent="." unique_id=1096331218 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 0, 15.590012)
+
+[node name="Bookshelf7" parent="." unique_id=1008090787 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 2, 15.590012)
+
+[node name="Bookshelf8" parent="." unique_id=2092680065 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 4, 15.590012)
+
+[node name="Bookshelf9" parent="." unique_id=1711811239 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 6, 15.590012)
+
+[node name="Bookshelf10" parent="." unique_id=1524482628 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 8, 15.590012)
+
+[node name="Bookshelf11" parent="." unique_id=1890041846 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 0, 5.344081)
+
+[node name="Bookshelf12" parent="." unique_id=2101411584 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 2, 5.344081)
+
+[node name="Bookshelf13" parent="." unique_id=445000643 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 4, 5.344081)
+
+[node name="Bookshelf14" parent="." unique_id=622724674 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 6, 5.344081)
+
+[node name="Bookshelf15" parent="." unique_id=1546991164 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 8, 5.344081)
+
+[node name="Bookshelf16" parent="." unique_id=88006217 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 0, 3.344081)
+
+[node name="Bookshelf17" parent="." unique_id=1020480710 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 2, 3.344081)
+
+[node name="Bookshelf18" parent="." unique_id=1493107259 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 4, 3.344081)
+
+[node name="Bookshelf19" parent="." unique_id=1073038063 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 6, 3.344081)
+
+[node name="Bookshelf20" parent="." unique_id=500137579 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.195267, 8, 3.344081)
+
+[node name="Bookshelf21" parent="." unique_id=1698484858 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.32268584, 0, 1.8121009)
+
+[node name="Bookshelf22" parent="." unique_id=1592636277 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.32268584, 2, 1.8121009)
+
+[node name="Bookshelf23" parent="." unique_id=838687423 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.32268584, 4, 1.8121009)
+
+[node name="Bookshelf24" parent="." unique_id=1754877529 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.32268584, 6, 1.8121009)
+
+[node name="Bookshelf25" parent="." unique_id=608946154 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.32268584, 8, 1.8121009)
+
+[node name="Bookshelf26" parent="." unique_id=872204573 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.3226857, 0, 1.8121009)
+
+[node name="Bookshelf27" parent="." unique_id=1046814463 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.3226857, 2, 1.8121009)
+
+[node name="Bookshelf28" parent="." unique_id=903574041 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.3226857, 4, 1.8121009)
+
+[node name="Bookshelf29" parent="." unique_id=39369780 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.3226857, 6, 1.8121009)
+
+[node name="Bookshelf30" parent="." unique_id=1364733631 instance=ExtResource("30_e5bmj")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.3226857, 8, 1.8121009)

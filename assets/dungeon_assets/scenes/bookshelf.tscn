@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c7hrkhj7d7ia3"]
+
+[ext_resource type="PackedScene" uid="uid://8isidujv3oyp" path="res://assets/dungeon_assets/custom/Bookshelf.glb" id="1_jsrtm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o4eac"]
+size = Vector3(1, 2, 2)
+
+[node name="Bookshelf" type="StaticBody3D" unique_id=349039732]
+
+[node name="Bookshelf" parent="." unique_id=1146944203 instance=ExtResource("1_jsrtm")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1363533608]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_o4eac")
