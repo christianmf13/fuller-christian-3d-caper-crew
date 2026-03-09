@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://bmyry35awo73s"]
 
-[ext_resource type="Texture2D" uid="uid://c6ufkusf5q8wm" path="res://assets/vfx/fire2.png" id="1_n1euj"]
+[ext_resource type="Texture2D" uid="uid://c2i15c2u1nr8q" path="res://assets/vfx/fire4.png" id="1_n1euj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bvg5r"]
 transparency = 1
 shading_mode = 0
+specular_mode = 2
 vertex_color_use_as_albedo = true
 vertex_color_is_srgb = true
 albedo_texture = ExtResource("1_n1euj")
@@ -23,7 +24,8 @@ point_count = 3
 curve = SubResource("Curve_441yv")
 
 [sub_resource type="Gradient" id="Gradient_dnb0n"]
-colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+offsets = PackedFloat32Array(0, 0.49760765, 0.569378)
+colors = PackedColorArray(1, 1, 1, 1, 0.6996531, 0.69965357, 0.69965345, 1, 0.26657522, 0.2665752, 0.2665752, 1)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_q3jrq"]
 gradient = SubResource("Gradient_dnb0n")
@@ -54,6 +56,8 @@ direction = Vector3(0, 0.1, 0)
 spread = 1.0
 initial_velocity_min = 0.25
 initial_velocity_max = 0.5
+angular_velocity_min = -45.000015
+angular_velocity_max = 44.999985
 radial_velocity_min = -2.2351742e-05
 radial_velocity_max = 0.29997763
 radial_velocity_curve = SubResource("CurveTexture_lyn5w")
@@ -73,7 +77,8 @@ turbulence_noise_speed_random = 0.02
 [node name="FireVFX" type="GPUParticles3D" unique_id=601964535]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.8, 0)
 material_override = SubResource("StandardMaterial3D_bvg5r")
-amount = 50
+amount = 24
+lifetime = 1.08
 process_material = SubResource("ParticleProcessMaterial_8ysid")
 draw_pass_1 = SubResource("QuadMesh_a53up")
 

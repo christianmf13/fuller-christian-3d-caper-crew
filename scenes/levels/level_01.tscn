@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://csiqf8ho1tdqa" path="res://assets/dungeon_assets/props/keyring.glb" id="29_cag23"]
 [ext_resource type="PackedScene" uid="uid://c7hrkhj7d7ia3" path="res://assets/dungeon_assets/scenes/bookshelf.tscn" id="30_e5bmj"]
 [ext_resource type="PackedScene" uid="uid://cerhy8wbo78k2" path="res://assets/dungeon_assets/scenes/diamond.tscn" id="31_iqf6e"]
+[ext_resource type="PackedScene" uid="uid://bmyry35awo73s" path="res://assets/vfx/scenes/fire_vfx.tscn" id="32_stkom"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_cwffn"]
 
@@ -17525,3 +17526,6 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.32
 
 [node name="Bookshelf30" parent="Set Dressing/Props" unique_id=1364733631 instance=ExtResource("30_e5bmj")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2.3226857, 8, 1.8121009)
+
+[node name="FireVFX" parent="." unique_id=601964535 instance=ExtResource("32_stkom")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3841934, 3.0624475, 49.495724)
