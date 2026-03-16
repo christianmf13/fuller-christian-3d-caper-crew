@@ -32,6 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://c7hrkhj7d7ia3" path="res://assets/dungeon_assets/scenes/bookshelf.tscn" id="30_e5bmj"]
 [ext_resource type="PackedScene" uid="uid://cerhy8wbo78k2" path="res://assets/dungeon_assets/scenes/diamond.tscn" id="31_iqf6e"]
 [ext_resource type="PackedScene" uid="uid://bmyry35awo73s" path="res://assets/vfx/scenes/fire_vfx.tscn" id="32_stkom"]
+[ext_resource type="VoxelGIData" uid="uid://cm2dlomsjywt" path="res://scenes/levels/level_01.VoxelGI_data.res" id="33_5t8rk"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_cwffn"]
 
@@ -49,6 +50,7 @@ sky = SubResource("Sky_i2aat")
 ambient_light_sky_contribution = 0.19
 tonemap_mode = 2
 ssao_enabled = true
+sdfgi_use_occlusion = true
 glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdh5e"]
@@ -2624,7 +2626,7 @@ shadow_enabled = true
 transform = Transform3D(-1.0000001, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0, -1.0000001, 4.050643, 11.699818, 0.5534462)
 
 [node name="SpotLight3D5" type="SpotLight3D" parent="Lights" unique_id=172996483]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -58.762814, 12.868905, -34.450348)
+transform = Transform3D(0.9659258, -1.131334e-08, 0.25881904, -0.25881904, -4.222196e-08, 0.9659258, 0, -1, -4.371139e-08, -58.762814, 12.868905, -34.450348)
 light_color = Color(1, 0.71123004, 0.5032385, 1)
 light_energy = 5.0
 light_specular = 2.851
@@ -2632,7 +2634,7 @@ spot_range = 21.357073
 spot_angle = 42.63731
 
 [node name="SpotLight3D6" type="SpotLight3D" parent="Lights" unique_id=1460885]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -79.76282, 12.868905, -34.450348)
+transform = Transform3D(0.70710677, -3.090862e-08, 0.70710677, -0.70710677, -3.090862e-08, 0.70710677, 0, -1, -4.371139e-08, -79.76282, 12.868905, -34.450348)
 light_color = Color(1, 0.71123004, 0.5032385, 1)
 light_energy = 5.0
 light_specular = 2.851
@@ -3031,6 +3033,24 @@ shadow_enabled = true
 
 [node name="torch_mounted143" parent="Lights" unique_id=691547608 instance=ExtResource("1_cwffn")]
 transform = Transform3D(1, 0, 8.940697e-08, 0, 1, 0, -8.940697e-08, 0, 1, 5.689853, 1.6999166, 1.036941)
+
+[node name="OmniLight3D172" type="OmniLight3D" parent="Lights" unique_id=820854886]
+transform = Transform3D(-1, 0, 5.9604645e-08, 0, 1, 0, -5.9604645e-08, 0, -1, -94.956505, 6.548356, -27.309973)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="torch_mounted144" parent="Lights" unique_id=733102400 instance=ExtResource("1_cwffn")]
+transform = Transform3D(1.4901161e-07, 0, 1, 0, 1, 0, -1, 0, 1.4901161e-07, -95.305214, 5.744499, -27.324697)
+
+[node name="OmniLight3D173" type="OmniLight3D" parent="Lights" unique_id=1629463544]
+transform = Transform3D(-1, 0, 5.9604645e-08, 0, 1, 0, -5.9604645e-08, 0, -1, -94.956505, 6.548356, -39.309975)
+light_color = Color(1, 0.70980394, 0.5019608, 1)
+light_energy = 1.634
+shadow_enabled = true
+
+[node name="torch_mounted145" parent="Lights" unique_id=708661856 instance=ExtResource("1_cwffn")]
+transform = Transform3D(1.4901161e-07, 0, 1, 0, 1, 0, -1, 0, 1.4901161e-07, -95.305214, 5.744499, -39.3247)
 
 [node name="ProtoController" parent="." unique_id=697205900 instance=ExtResource("1_m802k")]
 transform = Transform3D(0.9579328, 0, 0.28699267, 0, 1, 0, -0.28699267, 0, 0.9579328, -32.87207, 0.06804049, 45.56922)
@@ -17147,7 +17167,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1.5807989, 34.7888)
 transform = Transform3D(-9.690006, 0, 6.8189735e-07, 0, 5.7000003, 0, -8.471273e-07, 0, -7.7999964, -92, 0, -32.759678)
 
 [node name="banner_mounted" parent="Set Dressing/Props" unique_id=1270358164 instance=ExtResource("21_w4kkx")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -94.519196, 8, -33.12484)
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -95.60143, 8, -33.12484)
 
 [node name="sword_shield" parent="Set Dressing/Props" unique_id=1990751431 instance=ExtResource("22_mhiu8")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -95.1497, 10, -37)
@@ -17552,3 +17572,25 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.384193, 3.0624475, 49.495
 
 [node name="FireVFX8" parent="VFX" unique_id=724471690 instance=ExtResource("32_stkom")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.615807, 3.0624475, 49.495724)
+
+[node name="VoxelGI" type="VoxelGI" parent="." unique_id=1154828312]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.5, 8.5, 2.5)
+size = Vector3(123, 19, 107)
+data = ExtResource("33_5t8rk")
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="." unique_id=1243537778]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.494995, 6.5, 0.49273682)
+size = Vector3(74, 15, 39.72473)
+
+[node name="ReflectionProbe2" type="ReflectionProbe" parent="." unique_id=1723275625]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.494995, 6.5, 35.990845)
+size = Vector3(118, 15, 34.728516)
+interior = true
+
+[node name="ReflectionProbe3" type="ReflectionProbe" parent="." unique_id=796953546]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -42.994995, 6.5, -33.06671)
+size = Vector3(28.156372, 15, 120)
+
+[node name="ReflectionProbe4" type="ReflectionProbe" parent="." unique_id=1869710670]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.4307861, 6.5, 0.41451442)
+size = Vector3(41.11882, 15, 38.871582)
