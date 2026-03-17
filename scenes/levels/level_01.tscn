@@ -52,6 +52,9 @@ tonemap_mode = 2
 ssao_enabled = true
 sdfgi_use_occlusion = true
 glow_enabled = true
+glow_bloom = 0.11
+adjustment_enabled = true
+adjustment_saturation = 1.31
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdh5e"]
 transparency = 1
@@ -16961,46 +16964,46 @@ transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -25.
 transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -25.893166, 4, -45.76615)
 
 [node name="Wall Cropped92" parent="Set Dressing/Rooms" unique_id=1884013598 instance=ExtResource("3_1ey3t")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.597687, 8.293972, -23.019073)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.339125, 8.293972, -23.019073)
 
 [node name="Wall Cropped Top92" parent="Set Dressing/Rooms" unique_id=954340896 instance=ExtResource("5_kfebt")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.544323, 11.1910305, -21.884174)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.28576, 11.1910305, -21.884174)
 
 [node name="Wall Cropped93" parent="Set Dressing/Rooms" unique_id=331850128 instance=ExtResource("3_1ey3t")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.597687, 8.293972, -27.019073)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.339125, 8.293972, -27.019073)
 
 [node name="Wall Cropped Top93" parent="Set Dressing/Rooms" unique_id=112704236 instance=ExtResource("5_kfebt")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.544323, 11.1910305, -25.884174)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.28576, 11.1910305, -25.884174)
 
 [node name="Wall Cropped94" parent="Set Dressing/Rooms" unique_id=1812244761 instance=ExtResource("3_1ey3t")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.597687, 8.293972, -31.019073)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.339125, 8.293972, -31.019073)
 
 [node name="Wall Cropped Top94" parent="Set Dressing/Rooms" unique_id=1033823503 instance=ExtResource("5_kfebt")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.544323, 11.1910305, -29.884174)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.28576, 11.1910305, -29.884174)
 
 [node name="Wall Cropped95" parent="Set Dressing/Rooms" unique_id=595632605 instance=ExtResource("3_1ey3t")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.597687, 8.293972, -35.019073)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.339125, 8.293972, -35.019073)
 
 [node name="Wall Cropped Top95" parent="Set Dressing/Rooms" unique_id=1513926047 instance=ExtResource("5_kfebt")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.544323, 11.1910305, -33.884174)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.28576, 11.1910305, -33.884174)
 
 [node name="Wall Cropped96" parent="Set Dressing/Rooms" unique_id=260710139 instance=ExtResource("3_1ey3t")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.597687, 8.293972, -39.019073)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.339125, 8.293972, -39.019073)
 
 [node name="Wall Cropped Top96" parent="Set Dressing/Rooms" unique_id=971210586 instance=ExtResource("5_kfebt")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.544323, 11.1910305, -37.884174)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.28576, 11.1910305, -37.884174)
 
 [node name="Wall Cropped97" parent="Set Dressing/Rooms" unique_id=560036163 instance=ExtResource("3_1ey3t")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.597687, 8.293972, -43.019073)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.339125, 8.293972, -43.019073)
 
 [node name="Wall Cropped Top97" parent="Set Dressing/Rooms" unique_id=1904755585 instance=ExtResource("5_kfebt")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.544323, 11.1910305, -41.884174)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.28576, 11.1910305, -41.884174)
 
 [node name="Wall Cropped98" parent="Set Dressing/Rooms" unique_id=1827776863 instance=ExtResource("3_1ey3t")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.597687, 8.293972, -47.019073)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.339125, 8.293972, -47.019073)
 
 [node name="Wall Cropped Top98" parent="Set Dressing/Rooms" unique_id=1417386136 instance=ExtResource("5_kfebt")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.544323, 11.1910305, -45.884174)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.28576, 11.1910305, -45.884174)
 
 [node name="Wall Open Arch9" parent="Set Dressing/Rooms" unique_id=63426816 instance=ExtResource("7_ijn0p")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26.093609, 0, -34.064346)
